@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import PinterestIcon from '@material-ui/icons/Pinterest';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import './Navbar.css';
 
 const Navbar = () => {
+    
+    // let width = window.innerWidth;
+    // const [state, setstate] = useState(width);
 
-    const styleIcon = {color: "#fff", fontSize: 22}
-
-        console.log(window.innerWidth)
+    // useEffect(() => {
+    //     window.addEventListener('resize', e => {
+    //         return width;
+    //     })
+    // }, [state])
     
     return (
         <div className="navbar">
@@ -24,23 +24,21 @@ const Navbar = () => {
             </ul>
 
             <div className="index"> 
-                <Link to="/">Thés Fleuris</Link>
+                <Link to="/">Thés Fleuries</Link>
             </div>
 
             <div className="link">
                <div className="login">
-                   <AccountCircleIcon style={styleIcon} />
-                   <Link to="/tea">Connexion</Link>
+                   <i className="fas fa-user-circle"></i>
+                   <Link className="log" to="/tea">Connexion</Link>
                </div>
                <div className="social">
-                   <a href="www.facebook.com"><FacebookIcon style={styleIcon} /></a>
-                   <a href="www.instagram.com"><InstagramIcon style={styleIcon} /></a>
-                   <a href="www.instagram.com"><PinterestIcon style={styleIcon}/></a>
+                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-instagram"></i>
+                    <i className="fas fa-shopping-cart"></i>
                </div>
-               <ShoppingCartIcon className="shop" style={{color: "white", fontSize: 32}} />
             </div>
-            
-        </div>
+        </div> 
     )
 }
 

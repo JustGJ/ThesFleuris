@@ -1,9 +1,16 @@
+*{
+  color: #fff;
+}
+
 .navbar {
   display: flex;
   width: 100vw;
+  position: fixed;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid #fff;
+  letter-spacing: .6px;
+  z-index: 2;
 }
 
 .navigation {
@@ -11,13 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 1.8rem;
+  margin-left: 1rem;
 }
 
 .navigation  > li > a { 
   display: inline-block;
-  margin-left: 1.9rem;
-  color: #fff;
+  margin-left: 1rem;
   font-size: 0.9rem;
 }
 
@@ -31,15 +37,9 @@
   text-transform: uppercase;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
-  padding: 2.2rem;
-  font-size: 1.2em;
-}
-
-.navbar > .index > a {
+  padding: 2rem  1.4rem;
   font-size: 1.2rem;
-  color: #fff;
 }
-
 
 .navbar > .link {
   flex: 1;
@@ -47,13 +47,8 @@
   align-items: center;
   justify-content: flex-end;
   width: auto;
-  margin-right: 3rem;
+  margin-right: 1.2rem;
   font-size: 0.9rem;
-}
-
-
-.navbar > .link > .login > a {
-  color: #fff
 }
 
 .login {
@@ -71,11 +66,38 @@
   align-items: center;
 }
 
-.social > a {
+
+i {
+  font-size: 1.2rem;
   padding: 0 1rem;
   cursor: pointer;
 }
 
-.shop {
-  margin-bottom: 0.3rem;
+i:nth-child(4) {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation  > li > a {
+    font-size: 0.75rem;
+    letter-spacing: normal;
+  }
+  .navbar > .index {
+    font-size: .8rem;
+    padding: 1.8rem  1.1rem;
+  }
+  .navbar > .link {
+    font-size: 0.8rem;
+  }
+  i {
+    padding: 0 .5rem;
+    font-size: 1rem;
+  }
+  i:nth-child(4) {
+    font-size: 1.4rem;
+  }
+
+  .log {
+    display: none;
+  }
 }

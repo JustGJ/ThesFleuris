@@ -1,10 +1,14 @@
 import React from 'react';
+import Navbar from '../../components/Navbar/Navbar';
+import Background from '../../components/Background/Background';
+import bgAccessories from '../../assets/bgAccessories.jpg'
 
 const Accessories = () => {
   return (
-    <div>
-      Accessories
-    </div>
+    <>
+      <Navbar />
+      <Background img={bgAccessories} title="Accessoires" />
+    </>
   );
 };
 

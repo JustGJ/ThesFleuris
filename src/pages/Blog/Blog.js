@@ -1,10 +1,14 @@
 import React from 'react';
+import Navbar from '../../components/Navbar/Navbar';
+import Background from '../../components/Background/Background';
+import bgBlog from '../../assets/bgBlog.jpg';
 
 const blog = (props) => {
     return (
-        <div>
-            Blog
-        </div>
+        <>
+            <Navbar />
+            <Background img={bgBlog} title="Blog des Thés Fleuris" />   
+        </>
     )
 }
 
