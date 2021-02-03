@@ -3,11 +3,12 @@ import '../Background/Background.css';
 
 const Background = ({ img, title }) => {
 
+  let background = {backgroundImage: "url(" +  img  + ")"}
+
   return (
     <>
-        <img className="background" src={img} alt ="img" />
+        <div className="background" style={ background }></div>
         <h3 className="title">{title}</h3>
-      
     </>
   );
 };

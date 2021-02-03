@@ -1,24 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import Background from '../Background/Background';
+import './Header.css';
 
-const Navbar = () => {
-    
-    // let width = window.innerWidth;
-    // const [state, setstate] = useState(width);
+const Header = ( {img, title} ) => {
 
-    // useEffect(() => {
-    //     window.addEventListener('resize', e => {
-    //         return width;
-    //     })
-    // }, [state])
-    
     return (
+        <>
         <div className="navbar">
             <ul className="navigation">
                 <li><Link to="/tea">Thés</Link></li>
                 <li><Link to="/accessories">Accessoires</Link></li>
-                <li><Link to="/about">A propos</Link></li>
+                {/* <li><Link to="/about">A propos</Link></li> */}
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
@@ -35,11 +28,15 @@ const Navbar = () => {
                <div className="social">
                     <i className="fab fa-facebook-f"></i>
                     <i className="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
                     <i className="fas fa-shopping-cart"></i>
                </div>
             </div>
-        </div> 
+        </div>
+            <Background img={img} title={title} />
+            <h3 className="title">{title}</h3>
+        </>
     )
 }
 
-export default Navbar;
+export default Header;

@@ -22,3 +22,24 @@
   transform: translateX(-50%);
   color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .background {
+    /* height: 80vh; */
+  }
+  .title {
+    
+  }
+}
