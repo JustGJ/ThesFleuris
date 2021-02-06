@@ -8,7 +8,7 @@ const Background = ({ img, title }) => {
   return (
     <>
         <div className="background" style={ background }></div>
-        <h3 className="title">{title}</h3>
+        <h3 className="title">{title}</h3> 
     </>
   );
 };

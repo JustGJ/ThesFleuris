@@ -3,6 +3,7 @@
 .background {
   width: 100vw;
   height: 100vh;
+  position: relative;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@
   color: #fff;
 }
 
+
 @media screen and (max-width: 1024px) {
   .title {
     font-size: 2.3rem;
@@ -34,12 +36,14 @@
     font-size: 1.8rem;
   }
 }
-
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
   .background {
-    /* height: 80vh; */
+    height: 80vh;
   }
   .title {
-    
-  }
+    top: 30%;
+    font-style: 1.4rem;
+    z-index: -1;
+  } 
 }
+

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import bgIndex from '../../assets/bgIndex.jpg';
 import '../Index/Index.css';
+import bgTea from '../../assets/bgTea.jpg'
 
 const index = () => {
     return (
@@ -11,11 +12,18 @@ const index = () => {
             blog
             avis
             footer
-            <p>a</p>
-            <p>a</p>
-            <p>w</p>
- 
-            <p>&</p>
+            <p style={{color:"blue"}}>a</p>
+            <p style={{color:"blue"}}>a</p>
+            <p style={{color:"blue"}}>w</p>
+            {/* <img src={bgTea} alt=""/> */}
+            <p style={{color:"blue"}}>&vvvvvvvvvvvvvvvvvvvvv</p>
+            <p>&vvvvvvvvvvvvvvvvvvvvv</p>
+            <p>&vvvvvvvvvvvvvvvvvvvvv</p>
+            <p>&vvvvvvvvvvvvvvvvvvvvv</p>
+            <p>&vvvvvvvvvvvvvvvvvvvvv</p>
+            <p>&vvvvvvvvvvvvvvvvvvvvv</p>
+            <p>&vvvvvvvvvvvvvvvvvvvvv</p>
+
             <p>&</p>
             <p>&</p>
             <p>&</p>
