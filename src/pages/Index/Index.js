@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import Opinion from '../../components/Opinion/Opinion';
 
 
 const index = (props) => {
@@ -10,7 +11,7 @@ const index = (props) => {
             background
             cards 
             blog
-            avis
+            <Opinion />
             <Footer />
         </div>
     )
