@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Background from '../Background/Background';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
-import './Header.css';
+import classes from './Header.module.css';
 
 const Header = ( {img, title} ) => {
 
@@ -16,24 +16,24 @@ const Header = ( {img, title} ) => {
         </>
     ) : (
         <>
-        <div className="navbar">
-            <ul className="navigation">
+        <div className={classes.navbar}>
+            <ul className={classes.navigation}>
                 <li><Link to="/tea">Thés</Link></li>
                 <li><Link to="/accessories">Accessoires</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
         
-            <div className="index"> 
+            <div className={classes.index}> 
                 <Link to="/">Thés Fleuries</Link>
             </div>
         
-            <div className="link">
-                <div className="login">
+            <div className={classes.link}>
+                <div className={classes.login}>
                     <i className="fas fa-user-circle"></i>
                     <Link to="/tea">Connexion</Link>
                 </div>
-                <div className="social">
+                <div className={classes.social}>
                     <i className="fab fa-facebook-f"></i>
                     <i className="fab fa-instagram"></i>
                     <i className="fab fa-pinterest"></i>

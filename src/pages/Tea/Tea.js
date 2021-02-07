@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import bgTea from '../../assets/bgTea.jpg';
+import imgTea from '../../assets/imgTea.jpg';
 
 const Tea = (props) => {
     return (
         <>
-            <Header img={bgTea} title="Achetez vos thés favoris" />      
+            <Header img={imgTea} title="Achetez vos thés favoris" />      
         </>
     )
 }

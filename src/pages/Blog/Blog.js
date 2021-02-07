@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import bgBlog from '../../assets/bgBlog.jpg';
+import imgBlog from '../../assets/imgBlog.jpg';
 
 const blog = (props) => {
     return (
         <>
-            <Header img={bgBlog} title="Blog des Thés Fleuris"  />
+            <Header img={imgBlog} title="Blog des Thés Fleuris"  />
         </>
     )
 }

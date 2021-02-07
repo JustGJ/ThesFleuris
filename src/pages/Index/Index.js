@@ -1,13 +1,12 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import bgIndex from '../../assets/bgIndex.jpg';
+import imgIndex from '../../assets/imgIndex.jpg'
 import '../Index/Index.css';
-import bgTea from '../../assets/bgTea.jpg'
 
 const index = () => {
     return (
         <>
-            <Header img={bgIndex} title="C'est toujours l'heure du thé grâce aux tisanes fleuries" />
+            <Header img={imgIndex} title="C'est toujours l'heure du thé grâce aux tisanes fleuries" />
             cards 
             blog
             avis

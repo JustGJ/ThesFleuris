@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import bgAccessories from '../../assets/bgAccessories.jpg'
+import imgAccessories from '../../assets/imgAccessories.jpg'
 
 const Accessories = () => {
   return (
     <>
-      <Header img={bgAccessories} title="Accessoires"/>
+      <Header img={imgAccessories} title="Accessoires"/>
     </>
   );
 };
