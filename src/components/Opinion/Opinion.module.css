@@ -1,0 +1,29 @@
+.opinions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  background-color: #242a35; 
+  color: #fff;
+  padding: 2.5rem;
+}
+
+.autor {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.arrowRight {
+  width: 20px;
+  height: 32px;
+  background-color: #e888a3;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.arrowLeft {
+  width: 20px;
+  height: 32px;
+  background-color: #8de698;
+  clip-path: polygon(100% 100%, 100% 0, 0 50%);
+}
