@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+.navbar {
+  position: fixed;  
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly; 
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #fff;
+  letter-spacing: .6px;
+  z-index: 1;
+}
+
+.navigation, .link {
+  flex: 1;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation  a { 
+  margin-left: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.index {
+  font-family: 'Darker Grotesque', sans-serif;
+  text-transform: uppercase;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 2rem  1.4rem;
+  font-size: 1.4rem;
+}
+
+a:hover {
+  color: #C89446;
+  transition: .3s ease-out;
+}
+
+.active {
+  color: #C89446;
+}
+ 
+.login, .social {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  margin: 0 1.1rem;
+}
+
+i {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+i:hover {
+  color: #C89446;
+  transition: .3s ease-out;
+  transform: translateX(.2rem);
+}
+
+i:nth-child(2){
+    margin-top: 0.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation  a {
+    font-size: 0.75rem;
+    letter-spacing: normal;
+  }
+  .index {
+    font-size: .9rem;
+    padding: 1.8rem  1.1rem;
+  }
+  .link {
+    font-size: 0.75rem;
+  }
+  i {
+    padding: 0rem 1rem 0 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .index {
+    font-size: .7rem;
+    padding: 1.4rem 0;
+    width: 12%;
+    text-align: center;
+  }
+  .link {
+    font-size: 0.7rem;
+  }
+  i {
+    font-size: .9rem;
+  }
+}
+

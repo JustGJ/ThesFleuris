@@ -1,6 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+=======
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: #fff;
+>>>>>>> feature/header
 }
 
 li {
@@ -9,8 +15,11 @@ li {
 
 a {
   text-decoration: none;
+<<<<<<< HEAD
 }
 
 a:visited{
   color: #000;
+=======
+>>>>>>> feature/header
 }

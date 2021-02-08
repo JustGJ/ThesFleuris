@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
+import imgBlog from '../../assets/imgBlog.jpg';
 
 const blog = (props) => {
     return (
-        <div>
-            Blog
-        </div>
+        <>
+            <Header img={imgBlog} title="Blog des Thés Fleuris"  />
+        </>
     )
 }
 
