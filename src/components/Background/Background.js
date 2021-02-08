@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Background/Background.css';
+import classes from '../Background/Background.module.css';
 
 const Background = ({ img, title }) => {
 
@@ -7,10 +7,12 @@ const Background = ({ img, title }) => {
 
   return (
     <>
-        <div className="background" style={ background }></div>
-        <h3 className="title">{title}</h3> 
+        <div className={classes.background} style={ background }>
+          <h3>{title}</h3> 
+        </div>
+        
     </>
-  );
+  );        
 };
 
 export default Background;

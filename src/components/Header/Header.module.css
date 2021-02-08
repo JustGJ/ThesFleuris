@@ -1,65 +1,53 @@
-* {
-  color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 
 .navbar {
+  position: fixed;  
   display: flex;
   width: 100vw;
-  background-position: top;
-  position: fixed;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: space-evenly; 
+  background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid #fff;
   letter-spacing: .6px;
   z-index: 1;
 }
 
-.navigation {
+.navigation, .link {
   flex: 1;  
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .25rem .2rem 0 1rem;
 }
 
-.navigation  > li > a { 
-  display: inline-block;
+.navigation  a { 
   margin-left: 1rem;
-  font-size: 0.9rem;
-}
-
-.navigation  > li > a:hover{ 
-  color: #C89446;
-  transition: .4s;
+  letter-spacing: 0.05rem;
 }
 
 .index {
+  font-family: 'Darker Grotesque', sans-serif;
   text-transform: uppercase;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
   padding: 2rem  1.4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
-.link {
-  flex: 1;
+a:hover {
+  color: #C89446;
+  transition: .3s ease-out;
+}
+
+.active {
+  color: #C89446;
+}
+ 
+.login, .social {
   display: flex;
   align-items: center;
-  width: auto;
-  justify-content: flex-end;
-  margin: 0 1rem 0 0;
-  padding-bottom: 0.4rem;
-  font-size: 0.9rem;
 }
 
 .login {
-  display: flex;
-  align-items: center;
   margin: 0 1.1rem;
-} 
-
-.login > a {
-  margin: .3rem .3rem 0 0;
 }
 
 i {
@@ -68,25 +56,18 @@ i {
   cursor: pointer;
 }
 
-.login i {
-    margin-top: .16rem;
-
+i:hover {
+  color: #C89446;
+  transition: .3s ease-out;
+  transform: translateX(.2rem);
 }
 
 i:nth-child(2){
     margin-top: 0.1rem;
 }
 
-.social {
-  display: flex;
-  align-items: center;
-}
-
-
-
-
 @media screen and (max-width: 1024px) {
-  .navigation  > li > a {
+  .navigation  a {
     font-size: 0.75rem;
     letter-spacing: normal;
   }
@@ -96,19 +77,14 @@ i:nth-child(2){
   }
   .link {
     font-size: 0.75rem;
-    justify-content: center;
   }
   i {
-    padding: 0.2rem .9rem 0 0;
+    padding: 0rem 1rem 0 0;
     font-size: 1rem;
   }
- 
 }
 
 @media screen and (max-width: 750px) {
-  .navigation {
-    margin-right: .4rem;
-  }
   .index {
     font-size: .7rem;
     padding: 1.4rem 0;
@@ -119,7 +95,7 @@ i:nth-child(2){
     font-size: 0.7rem;
   }
   i {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
-.hamburger__navbar {
+
+.navbar {
   position: absolute;
   display: flex;
   justify-content:space-between;
@@ -8,21 +9,16 @@
   width: 100vw;
   padding: 1.3rem;
   border-bottom: 1px solid #fff;
-  z-index: 30;
+  z-index: 2;
 }
 
-
-.hamburger__navbar > i {
-  font-size: 1.4rem;
-}
-
-.hamburger__title__navbar {
+.navbar a {
   font-family: 'Darker Grotesque', sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
-} 
+}
 
-.hamburger__menu {
+.menu {
   font-family: 'Darker Grotesque', sans-serif;
   font-style: italic;
   display: flex;
@@ -32,34 +28,30 @@
   width: 100vw;
   height: 100vh;
   right: -120%;
-  padding-left: 4rem;
+  padding: 3.5rem 4rem;
   background-color: rgb(36,42,53);
   transition: .5s ease;
   font-size: 1.4rem;
   letter-spacing: .2rem;
   opacity: 0;
-  z-index: 1;
 }
 
-.hamburger__navigation {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.login__hamburger {
+.menu .login {
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  font-style: normal;
-  
-
 }
 
-.active {
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 27vh;
+  justify-content: space-between;
+}
+
+.active { 
   right: 0%;
   opacity: 1;
-  z-index: 0;
+  z-index: 1;
 }
 
 

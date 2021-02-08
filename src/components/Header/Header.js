@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Background from '../Background/Background';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
@@ -7,21 +7,21 @@ import classes from './Header.module.css';
 
 const Header = ( {img, title} ) => {
 
-    const isMobile = useMediaQuery({query: '(max-width: 580px'});// Utilisation mediaQuery mobile
+    const isMobile = useMediaQuery({query: '(max-width: 520px'});           // Utilisation mediaQuery mobile
    
     return isMobile ? (  
         <>                                   
             <HamburgerMenu />
             <Background img={img} title={title} />
         </>
-    ) : (
+    ) : 
         <>
         <div className={classes.navbar}>
             <ul className={classes.navigation}>
-                <li><Link to="/tea">Thés</Link></li>
-                <li><Link to="/accessories">Accessoires</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><NavLink activeClassName={classes.active} to="/tea">Thés</NavLink></li>
+                <li><NavLink activeClassName={classes.active} to="/accessories">Accessoires</NavLink></li>
+                <li><NavLink activeClassName={classes.active} to="/blog">Blog</NavLink></li>
+                <li><NavLink activeClassName={classes.active} to="/contact">Contact</NavLink></li>
             </ul>
         
             <div className={classes.index}> 
@@ -31,7 +31,7 @@ const Header = ( {img, title} ) => {
             <div className={classes.link}>
                 <div className={classes.login}>
                     <i className="fas fa-user-circle"></i>
-                    <Link to="/tea">Connexion</Link>
+                    <Link to="/login">Connexion</Link>
                 </div>
                 <div className={classes.social}>
                     <i className="fab fa-facebook-f"></i>
@@ -43,13 +43,6 @@ const Header = ( {img, title} ) => {
         </div>
         <Background img={img} title={title} />
         </>
-    )
-    }
-     
-       
-
-
-   
-
+}
 
 export default Header;
