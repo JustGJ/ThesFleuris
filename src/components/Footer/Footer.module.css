@@ -5,40 +5,46 @@
   width: 100vw;
   background: rgb(230,231,234);
   padding: 3rem 1.6rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
 }
 
-.container {
+.containerDiscover {
   display: flex;
   justify-content: space-around;
 }
 
-.container__discover > h1 {
+.discover h1 {
   font-family: 'Sorts Mill Goudy', serif;
 }
 
-.container__discover > p {
+.discover p {
   margin-top: .5rem;
 }
 
-span {
+.discover span a {
   text-decoration: underline;
+  color: #000;
 }
 
 .navigation {
   margin: 1.7rem 0;
+  color: #000;
 }
 
 .navigation > li {
   padding: .3rem 0;
 }
 
-.container__infos {
+.navigation a {
+  color: #000;
+}
+
+.containerInfos, .social {
   display: flex;
   flex-direction: column;
 }
 
-.container__infos > p, .follow > p {
+.containerInfos > p, .follow > p {
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.3rem;
   padding: .9rem .9rem .9rem 0;
@@ -54,6 +60,7 @@ span {
 
 .infos > a {
   padding: .3rem 0rem;
+  color: #000;
 }
 
 .follow {
@@ -65,13 +72,10 @@ span {
   margin-bottom: 1.1rem;
 }
 
-.social {
-  display: flex;
-  flex-direction: column;
-}
 
 .social > a {
   padding: .3rem 0;
+  color: #000;
 }
 
 .submitEmail {
@@ -123,10 +127,10 @@ span {
   .footer {
     font-size: .9rem;
   }
-  .container {
+  .containerDiscover {
     flex-direction: column;
   }
-  .container__infos > p, .follow > p {
+  .containerInfos > p, .follow > p {
     padding-bottom: 0;
     margin-top: 1.1rem;
     font-size: 1.1rem;

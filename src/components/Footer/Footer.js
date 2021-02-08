@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Footer/Footer.css';
+import classes from './Footer.module.css';
 
 const Footer = () => {
   return (
     <>
-      <div className="footer">
-         <div className="container">
-            <div className="container__discover">
+      <div className={classes.footer}>
+         <div className={classes.containerDiscover}>
+            <div className={classes.discover}>
                   <h1>Découvrez <br/> les thés Fleuris</h1>
-                  <ul className="navigation">
+                  <ul className={classes.navigation}>
                       <li><Link to="/tea">Boutique</Link></li>
                       <li><Link to="/accessories">Accessoires</Link></li>
                       <li><Link to="/about">À propos</Link></li>
@@ -20,9 +20,9 @@ const Footer = () => {
                   <p>Service client : 01 23 45 67 89</p>
               </div>
 
-              <div className="container__infos">
+              <div className={classes.containerInfos}>
                   <p>Aide</p>
-                  <div className="infos">
+                  <div className={classes.infos}>
                       <Link to="/">FAQ</Link>
                       <Link to="/">Livraison et retours</Link>
                       <Link to="/">Politique du magasin</Link>
@@ -34,16 +34,16 @@ const Footer = () => {
                   </div>
               </div>
 
-              <div className="follow">
+              <div className={classes.follow}>
                   <p>Suivez-nous</p>
-                  <div className="social">
+                  <div className={classes.social}>
                     <Link to="/">Facebook</Link>
                     <Link to="/">Instagram</Link>
                     <Link to="/">Pinterest</Link>
                   </div>
               </div>
           </div>
-          <div className="submitEmail">
+          <div className={classes.submitEmail}>
             <input type="email" id="email" placeholder="Saisissez votre e-mail*" />
             <button type="submit" id="email">S'abonner</button>
         </div>

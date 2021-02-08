@@ -1,14 +1,13 @@
 import React, {useRef, useState } from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
 import { Link } from 'react-router-dom';
-import classes from '../HamburgerMenu/HamburgerMenu.module.css'
+import classes from './HamburgerMenu.module.css';
 
 const HamburgerMenu = () => {
 
   const [isOpen, setOpen] = useState(false);
 
   const display = useRef(null);
-
 
   return (
     <>
@@ -18,7 +17,7 @@ const HamburgerMenu = () => {
         <Link to="/">Thés Fleuries</Link>
           
         <Hamburger  color="#fff" toggled={isOpen} toggle={setOpen} onToggle={toggled => {
-            toggled ? display.current.classList.add(classes.active) : display.current.classList.remove(classes.active);  
+            toggled ? display.current.classList.add(classes.display) : display.current.classList.remove(classes.display);  
           }}
          /> 
         </div>
