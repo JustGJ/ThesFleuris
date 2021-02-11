@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+
+.card img {
+width: 30vw;
+cursor: pointer;
+}
+
+
+.informations h2 {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: .1rem;
+}
+
+.informations span {
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px){
+  .card img {
+    width: 32vw;
+  }
+  .card h2 {
+    font-size: 1.1rem;
+  }
+  .informations span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .card img {
+    width: 49vw;
+  }
+}

@@ -1,0 +1,41 @@
+.showInfos {
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  position: absolute;
+  height: 500%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.507);
+  animation: popup .3s ease forwards ;
+  transform-origin: center;
+  z-index: 1000;
+}
+
+.infosContent {
+  position: relative;
+  /* top: 45%; */
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  color: blue;
+  background: red;
+  padding: 2rem;
+  box-shadow: 0 10px 10px #333;
+  animation: popup .6s ease forwards;
+  transform: scale(0);
+  transform-origin: center;
+  z-index: 1001;
+}
+  @keyframes popup {
+    to {
+      transform: scale(1);
+    } 
+  }
+
+  .infosContent img {
+    height: 200px;
+    width: 200px;
+  }
