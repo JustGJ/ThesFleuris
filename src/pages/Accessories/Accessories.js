@@ -1,10 +1,15 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
+import imgAccessories from '../../assets/imgAccessories.jpg'
+import Footer from '../../components/Footer/Footer';
 
 const Accessories = () => {
   return (
-    <div>
-      Accessories
-    </div>
+    <>
+      <Header img={imgAccessories} title="Accessoires"/>
+      cards 
+      <Footer />
+    </>
   );
 };
 

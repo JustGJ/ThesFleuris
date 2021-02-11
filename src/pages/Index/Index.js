@@ -1,17 +1,18 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import Opinion from '../../components/Opinion/Opinion';
+import imgIndex from '../../assets/imgIndex.jpg'
 
-
-const index = (props) => {
+const index = () => {
     return (
-        <div>
-            <Navbar />
-            background
+        <>
+            <Header img={imgIndex} title="C'est toujours l'heure du thé grâce aux tisanes fleuries" />
             cards 
             blog
-            avis
-            footer
-        </div>
+            <Opinion />
+            <Footer />
+        </>
     )
 }
 

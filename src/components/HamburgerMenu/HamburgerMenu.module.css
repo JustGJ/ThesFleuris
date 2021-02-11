@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+
+
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 1.3rem;
+  border-bottom: 1px solid #fff;
+  z-index: 2;
+  color: #fff;
+}
+
+.navbar a {
+  font-family: 'Darker Grotesque', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.menu {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  right: -120%;
+  padding: 3.5rem 4rem;
+  background-color: rgb(36,42,53);
+  transition: .5s ease;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  opacity: 0;
+  color: #fff;
+}
+
+.menu .login {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 27vh;
+  justify-content: space-between;
+}
+
+.navigation a, .login a {
+  color: #fff;
+}
+
+.display { 
+  right: 0%;
+  opacity: 1;
+  z-index: 1;
+}
+
+
