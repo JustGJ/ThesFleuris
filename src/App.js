@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/login" component={Login} />
           <Route path="/tobuy" component={ToBuy} />
           <Route path="/" component={Index} />
+
         </Switch>
     </BrowserRouter>
   );
