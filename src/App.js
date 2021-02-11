@@ -8,6 +8,7 @@ import Contact from '../src/pages/Contact/Contact.js';
 import Blog from '../src/pages/Blog/Blog.js';
 import Tea from '../src/pages/Tea/Tea.js';
 import Login from '../src/pages/Login/Login';
+import ToBuy from '../src/components/ToBuy/ToBuy';
 import './App.css';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Login} />
+          <Route path="/tobuy" component={ToBuy} />
           <Route path="/" component={NotFound} />
         </Switch>
     </BrowserRouter>
