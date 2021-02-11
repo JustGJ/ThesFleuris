@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Index from '../src/pages/Index/Index.js';
 import About from '../src/pages/About/About.js';
 import Accessories from '../src/pages/Accessories/Accessories.js';
-import NotFound from '../src/pages/NotFound/NotFound.js';
 import Contact from '../src/pages/Contact/Contact.js';
 import Blog from '../src/pages/Blog/Blog.js';
 import Tea from '../src/pages/Tea/Tea.js';
@@ -23,7 +22,7 @@ const App = () => {
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Login} />
           <Route path="/tobuy" component={ToBuy} />
-          <Route path="/" component={NotFound} />
+          <Route path="/" component={Index} />
         </Switch>
     </BrowserRouter>
   );
