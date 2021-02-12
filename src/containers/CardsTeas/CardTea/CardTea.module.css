@@ -5,6 +5,22 @@ width: 30vw;
 cursor: pointer;
 }
 
+.informations button {
+  width: 20%;
+  padding: .5rem;
+  cursor: pointer;
+  letter-spacing: .05rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black ;
+  transition: .4s;
+  background-color: #c0c0c0;
+  font-style: italic;
+}
+
+.informations button:hover {
+ background-color: #c5882c;
+ color: #fff;
+}
 
 .informations h2 {
   font-family: 'Darker Grotesque', sans-serif;

@@ -4,8 +4,8 @@ import classes from './ToBuy.module.css';
 const ToBuy = (props) => {
 
   return (
-    <div className={classes.showInfos}>
-      <div className={classes.infosContent}> 
+    <div className={classes.showInfos} >
+      <div className={classes.infosContent} id="ToBuy"> 
         {props.name}
         <img src={props.img} alt={props.img}/>
       </div>  
