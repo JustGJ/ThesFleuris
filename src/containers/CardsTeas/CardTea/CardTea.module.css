@@ -5,21 +5,22 @@ width: 30vw;
 cursor: pointer;
 }
 
+.informations {
+  display: flex;
+  flex-direction: column;
+}
+
 .informations button {
-  width: 20%;
   padding: .5rem;
   cursor: pointer;
-  letter-spacing: .05rem;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px black ;
+  border-radius: 4px;
   transition: .4s;
-  background-color: #c0c0c0;
-  font-style: italic;
+  color: #fff;
+  background-color: #242A35;
 }
 
 .informations button:hover {
- background-color: #c5882c;
- color: #fff;
+ background-color: #656971;
 }
 
 .informations h2 {
@@ -46,8 +47,26 @@ cursor: pointer;
   }
 }
 
-@media screen and (max-width: 650px){
-  .card img {
-    width: 49vw;
+
+@media screen and (max-width: 800px){
+  .informations button {
+    font-size: .7rem;
   }
 }
+
+
+@media screen and (max-width: 650px){
+  .card img {
+    width: 47vw;
+    }
+  .informations button {
+    padding: .4rem;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .informations button {
+    padding: .3rem;
+  }
+}
+

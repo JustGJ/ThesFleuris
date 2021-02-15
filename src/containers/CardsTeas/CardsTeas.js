@@ -47,8 +47,8 @@ class IndexCards extends Component {
                           img={tea.imgSrc}
                           name={tea.name}
                           price={tea.price}
-                          desc={tea.desc}
-                          showInfos={this.handleShowInfos}         
+                          poids={tea.poids}
+                          desc={tea.desc}      
                         />
                     </div>
                   )}

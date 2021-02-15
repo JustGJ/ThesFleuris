@@ -1,42 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 .showInfos {
-  display: flex;
-  align-items: center;
-  overflow: visible;
   position: absolute;
-  height: 200%;
-  top: 0;
-  bottom: 0;
+  /* display: flex; */
+  /* align-items: center; */
+  /* height: 100vh; */
+  height: 500vh;
+  top: 100%;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.507);
   animation: popup .3s ease forwards ;
-  transform-origin: center;
+  transform-origin: center; 
   z-index: 1000;
 }
 
 .infosContent {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  width: 80vw;
-  height: 80vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* bottom: 0%; */
+  left: 15%;
+  top: 0%;
+  width: 70vw;
+  height: 100vh;
   margin: 0 auto;
   color: blue;
-  background: red;
+  background: #FFFFFF;
   padding: 2rem;
   box-shadow: 0 10px 10px #333;
   animation: popup .6s ease forwards;
   transform: scale(0);
   transform-origin: center;
-  z-index: 1001;
 }
-  @keyframes popup {
+
+.infosContent img {
+  width: 100vw;
+  /* height: 50vh; */
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  align-items: flex-start;
+  margin-left: 2rem;
+  padding: 1rem 0;
+  height: 70vh;
+  color: #838383;
+  font-size: .9rem;
+}
+
+.infos h3 {
+  font-family: 'Parisienne', cursive, sans-serif;
+  font-size: 2rem;
+}
+
+.quantite, .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quantite input {
+  width: 70%;
+  font-size: 1rem;
+  margin-top: .8rem;
+  padding: .2rem;
+  border: 1px solid #242A35;
+}
+
+.actions button {
+  width: 25vw;
+  transition: .4s;
+  background-color: #242A35;
+  cursor: pointer;
+  padding: .8rem;
+  margin: .2rem;
+  color: #fff;
+}
+
+.actions button:hover {
+  background-color: #656971;
+}
+
+@keyframes popup {
     to {
       transform: scale(1);
-    } 
-  }
+  } 
+}
 
+
+@media screen and (max-width: 820px){
   .infosContent img {
-    height: 200px;
-    width: 200px;
+    width: 100vw;
+    /* height: 50vh; */
   }
+  .actions button {
+    padding: .6rem;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .actions button {
+    font-size: .4rem;
+  }
+  .infosContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .infos {
+    align-items: center;
+    margin-left: 0;
+    font-size: .7rem;
+  }
+  .quantite label {
+    margin: .4rem 0;
+  }
+  .quantite input {
+    font-size: .6rem;
+    padding: .2rem;
+    margin: 0 auto;
+  }
+  .actions button {
+    padding: .25rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .infosContent img {
+    width: 100vw;
+    height: 40vh;
+  }
+  .actions button {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 460px){
+  .infosContent {
+    height: 60vh;
+    /* top: 0.5%; */
+  }
+  .actions button {
+    font-size: .4rem;
+  }
+}
+
