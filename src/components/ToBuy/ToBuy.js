@@ -1,15 +1,34 @@
 import React from 'react';
+// import { NavHashLink as Link } from 'react-router-hash-link';
 import classes from './ToBuy.module.css';
 
-const ToBuy = (props) => {
+const ToBuy = ( { img, name, price, poids, showInfo }) => {
+
 
   return (
-    <div className={classes.showInfos}>
-      <div className={classes.infosContent}> 
-        {props.name}
-        <img src={props.img} alt={props.img}/>
+    <div className={classes.showInfos} id="ToBuy" >
+
+      <div className={classes.infosContent} > 
+        <img  src={img} alt={img}/>
+
+        <div className={classes.infos}>
+          
+          <h3>{name}</h3>
+          <p>Prix : {price} €</p>
+          <p>Poids : {poids} gr</p>
+
+          <div className={classes.quantite}>
+            <label htmlFor="Quantité">Quantité :</label>
+            <input type="number" name="Quantité" id="Quantité" min="1" max="10"/>
+          </div>
+
+          <div className={classes.actions}>
+            <button>Ajouter au panier</button>
+            <button onClick={showInfo}>Retour à la boutique</button>
+          </div>
+        </div>
       </div>  
-    </div>
+   </div>
   );
 };
 
