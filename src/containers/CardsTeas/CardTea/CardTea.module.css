@@ -5,6 +5,23 @@ width: 30vw;
 cursor: pointer;
 }
 
+.informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.informations button {
+  padding: .5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: .4s;
+  color: #fff;
+  background-color: #242A35;
+}
+
+.informations button:hover {
+ background-color: #656971;
+}
 
 .informations h2 {
   font-family: 'Darker Grotesque', sans-serif;
@@ -30,8 +47,26 @@ cursor: pointer;
   }
 }
 
-@media screen and (max-width: 650px){
-  .card img {
-    width: 49vw;
+
+@media screen and (max-width: 800px){
+  .informations button {
+    font-size: .7rem;
   }
 }
+
+
+@media screen and (max-width: 650px){
+  .card img {
+    width: 47vw;
+    }
+  .informations button {
+    padding: .4rem;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .informations button {
+    padding: .3rem;
+  }
+}
+
