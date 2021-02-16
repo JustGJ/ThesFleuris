@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
-import ToBuy from '../../../components/ToBuy/ToBuy';
+import ToBuy from '../ToBuy/ToBuy';
 import classes from './CardTea.module.css';
 
 

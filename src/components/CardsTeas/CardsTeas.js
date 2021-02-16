@@ -8,7 +8,7 @@ import amande from '../../assets/indexTea/amande.jpg';
 import lavande from '../../assets/indexTea/lavande.jpg';
 import rose from '../../assets/indexTea/rose.jpg';
 import mint from '../../assets/indexTea/mint.jpg';
-import CardTea from '../CardsTeas/CardTea/CardTea';
+import CardTea from '../CardTea/CardTea';
 import classes from './CardsTeas.module.css';
 
 

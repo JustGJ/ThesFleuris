@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import Opinion from '../../components/Opinion/Opinion';
-import imgIndex from '../../assets/imgIndex.jpg'
-import CardsTeas from '../../containers/CardsTeas/CardsTeas';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import Opinion from '../components/Opinion/Opinion';
+import imgIndex from '../assets/imgIndex.jpg';
+import CardsTeas from '../components/CardsTeas/CardsTeas';
 
 const index = () => {
     return (

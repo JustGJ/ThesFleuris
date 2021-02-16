@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import imgAccessories from '../../assets/imgAccessories.jpg'
-import Footer from '../../components/Footer/Footer';
+import Header from '../components/Header/Header';
+import imgAccessories from '../assets/imgAccessories.jpg'
+import Footer from '../components/Footer/Footer';
 
 const Accessories = () => {
   return (
