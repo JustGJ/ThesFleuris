@@ -1,14 +1,15 @@
+
 import React, { useState } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import ToBuy from '../ToBuy/ToBuy';
 import classes from './CardTea.module.css';
 
-
-
-const CardTea = ( {img, name, price, poids, desc, showInfos} ) => {
+const CardTea = ( {img, name, price, poids} ) => {
   
-  const [showInfo, setShowInfo] = useState(false); // Stock un booléen qui permet d'ouvrir/fermer la fenêtre d'information du thé cliqué.
+  // == Stock un booléen qui permet d'ouvrir/fermer la fenêtre d'information du thé cliqué.
+  const [showInfo, setShowInfo] = useState(false); 
 
+  // == Toggle permettant d'afficher/cacher le menu hamburger
   const displayInfo = () => {
     setShowInfo(!showInfo)
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Index from '../src/pages/Index.js';
+import Home from '../src/pages/Home.js';
 import About from '../src/pages/About.js';
 import Accessories from '../src/pages/Accessories.js';
 import Contact from '../src/pages/Contact.js';
@@ -13,15 +13,14 @@ const App = () => {
   return (
     <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Index} />
+          <Route path="/" exact component={Home} />
           <Route path="/tea" component={Tea} />
           <Route path="/accessories" component={Accessories} />
           <Route path="/about" component={About} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Login} />
-          <Route path="/" component={Index} />
-
+          <Route path="/" component={Home} />
         </Switch>
     </BrowserRouter>
   );

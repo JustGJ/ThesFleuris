@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+// == Import des  différentes images de thés
 import camomille from '../../assets/indexTea/camomille.jpg';
 import framboise from '../../assets/indexTea/framboise.jpg';
 import hibiscus from '../../assets/indexTea/hibiscus.jpg';
@@ -8,12 +10,12 @@ import amande from '../../assets/indexTea/amande.jpg';
 import lavande from '../../assets/indexTea/lavande.jpg';
 import rose from '../../assets/indexTea/rose.jpg';
 import mint from '../../assets/indexTea/mint.jpg';
+
+// == Import composant et CSS
 import CardTea from '../CardTea/CardTea';
 import classes from './CardsTeas.module.css';
 
-
-
-class IndexCards extends Component {
+class CardsTeas extends Component {
 
   state = {
     teas : [
@@ -28,8 +30,6 @@ class IndexCards extends Component {
       {id: 9,imgSrc: mint, name: "Menthe", price: "15,00", poids: 300, desc: "Super mint"}
     ],
   }
-
-
 
   render() {
  
@@ -56,10 +56,9 @@ class IndexCards extends Component {
             
           }     
 
-          
         </>
     );
   }
 }
 
-export default IndexCards;
+export default CardsTeas;
