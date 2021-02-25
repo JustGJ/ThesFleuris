@@ -1,0 +1,104 @@
+.emptyCart {
+    margin: 8rem auto;
+    text-align: center;
+    width: 80%;
+}
+
+.emptyCart p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.emptyCart a {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.cartContent {
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cart {
+    display: inline-block;
+    margin: 2rem 1rem;
+    width: 30%;
+    box-shadow: 1px 3px 8px 1px rgb(192, 192, 192);
+    border-radius: .5rem;
+}
+
+.cardDetails {
+    display: flex;
+    align-items: center;
+    padding: 0rem 5rem;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+
+.buttons button {
+    font-family: 'Roboto';
+    background-color: #F50057;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 .4rem .7rem .4rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: #C51162;
+}
+
+.buttons button:nth-child(2) {
+    background-color: #3F51B5 ;
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: #303F9F ;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .cart {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .cardDetails {
+      flex-direction: column;
+      font-size: 2rem;
+    }
+    .total {
+        margin-bottom: .7rem;
+    }
+    .buttons button {
+        font-size: 1rem;
+    }
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .cart {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .cart {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .cart {
+      width: 90%;
+    }
+  }

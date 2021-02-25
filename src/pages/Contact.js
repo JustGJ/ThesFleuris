@@ -1,14 +1,12 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import imgContact from '../assets/imgContact.jpg';
+import contact from '../assets/header/contact.jpg';
 
 const Contact = (props) => {
     return (
         <>
-            <Header img={imgContact} title="Contactez-nous"/>
+            <Header background={contact} title="Contactez-nous"/>
             formulaire
-            <Footer />
         </>
     )
 }

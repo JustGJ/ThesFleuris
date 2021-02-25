@@ -1,14 +1,13 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import imgAccessories from '../assets/imgAccessories.jpg'
-import Footer from '../components/Footer/Footer';
+import accessories from '../assets/header/accessories.jpg'
 
 const Accessories = () => {
   return (
     <>
-      <Header img={imgAccessories} title="Accessoires"/>
+    
+      <Header background={accessories} title="Accessoires" /> 
       cards 
-      <Footer />
     </>
   );
 };

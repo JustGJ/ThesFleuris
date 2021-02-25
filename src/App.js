@@ -1,29 +1,132 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from '../src/pages/Home.js';
-import About from '../src/pages/About.js';
-import Accessories from '../src/pages/Accessories.js';
-import Contact from '../src/pages/Contact.js';
-import Blog from '../src/pages/Blog.js';
-import Tea from '../src/pages/Tea.js';
-import Login from '../src/pages/Login';
+
+import { Home, Accessories, Contact, Blog, Tea, Login } from './pages/export';
+import Cart from './components/Cart/Cart';
+
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+
 import './App.css';
+class App extends Component {
 
-const App = () => {
-  return (
-    <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/tea" component={Tea} />
-          <Route path="/accessories" component={Accessories} />
-          <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/login" component={Login} />
-          <Route path="/" component={Home} />
-        </Switch>
-    </BrowserRouter>
-  );
+    // == Panier, montant total du panier
+    state = {
+        cart: [],
+        total : []
+    }
+    
+    // == Ajout d'item dans panier : newItem en param = toutes les infos de l'item cliqué dans composant News.js
+    handleAddToCart = (newItem) => {
+        // == Nouvel item à ajouter au panier
+        const item = {
+            id: newItem.id,
+            imgSrc: newItem.imgSrc,
+            name: newItem.name,
+            price: newItem.price,
+            quantity: newItem.quantity
+        }
+
+        // == Copie de l'ancien pannier auquel on ajoute notre nouvel item avec push
+        const newCart = [...this.state.cart];
+        newCart.push(item);
+
+        // = Ajout du montant total
+        const total = {
+            id: newItem.id,
+            price: newItem.price
+        }
+
+        // == Copie de l'ancien montant auquel on ajoute notre nouveau montant avec push
+        const newTotal = [...this.state.total];
+        newTotal.push(total)
+
+        // == MAJ du panier et du total
+        this.setState({
+            cart: newCart,
+            total: newTotal
+        })
+    }
+
+     // == Modification d'un article (A RETRAVAILLER)
+     handleUpdateQuantity = (id, imgSrc, name, quantity, price) => {
+        // == On récupère l'index de l'item que l'on doit modifier
+        const itemIndex = this.state.cart.findIndex(l => {
+            return l.id === id;
+        })
+        // == Nouvel item 
+        const newItem = {id, imgSrc, name, quantity, price};
+
+        // == Copie de l'ancien item
+        const newCart= [...this.state.cart];
+        // == L'ancien item à l'indice[index] est remplacé pour le nouvel item
+        newCart[itemIndex]= newItem;
+
+        // == Mise à jour du state
+        this.setState({
+            cart: newCart
+        })
+    }
+
+    // == Suppression d'un article du panier et MAJ du total
+    handleDeleteCartItem = (id) => {
+        // == On récupère l'index en vérifiant si l'Id de l'item cliqué correspond à l'Id parcouru dans cart
+        const cartItemIndex = this.state.cart.findIndex(item => {
+            return item.id === id;
+        })
+
+        // == Copie de l'ancien pannier auquel on retire l'item grâce à l'index récupéré précédemment, et avec splice
+        const newCart = [...this.state.cart];
+        newCart.splice(cartItemIndex, 1)
+
+        // == Copie de l'ancien total auquel on retire le montant de l'item grâce à l'index récupéré précédemment, et avec splice
+        const newTotal = [...this.state.cart];
+        newTotal.splice(cartItemIndex, 1);
+
+        // == Mise à jour du pannier et du montant total
+        this.setState({
+            cart: newCart,
+            total: newTotal
+        })
+    }
+
+    // == Remise à zéro du panier
+    handleEmptyCart = () => {
+        this.setState({
+            cart: '',
+            total: ''
+        })
+    }
+
+
+    render() {
+     return (
+        <BrowserRouter>
+            <Navbar />
+            <Switch>
+                <Route exact path="/">
+                    <Home addCart={this.handleAddToCart} />
+                </Route>  
+                <Route path="/tea" component={Tea} />
+                <Route path="/accessories" component={Accessories} />
+                <Route path="/blog" component={Blog} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/login" component={Login} />
+                <Route path="/cart">
+
+                    <Cart 
+                        cart={this.state.cart} 
+                        modifier={this.handleUpdateQuantity}
+                        supprimer={this.handleDeleteCartItem}
+                        reinitialiser={this.handleEmptyCart} 
+                        total={this.state.total}
+                    />  
+                </Route>
+                <Route path="/" component={Home} />
+            </Switch>
+            <Footer />
+        </BrowserRouter>
+        )
+    }
 }
-
 export default App;

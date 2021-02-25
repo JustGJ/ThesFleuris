@@ -1,11 +1,10 @@
 
 import React, { useState } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
-import ToBuy from '../ToBuy/ToBuy';
-import classes from './CardTea.module.css';
+import ToBuy from '../../ToBuy/ToBuy';
+import classes from './New.module.css';
 
-const CardTea = ( {img, name, price, poids} ) => {
-  
+const New = ( { newTea, addCart } ) => {
   // == Stock un booléen qui permet d'ouvrir/fermer la fenêtre d'information du thé cliqué.
   const [showInfo, setShowInfo] = useState(false); 
 
@@ -13,7 +12,6 @@ const CardTea = ( {img, name, price, poids} ) => {
   const displayInfo = () => {
     setShowInfo(!showInfo)
   }
-
 
   return (
     <>
@@ -26,18 +24,20 @@ const CardTea = ( {img, name, price, poids} ) => {
             offset={-70}
             duration={500}
             >
-            <img src={img} alt={img}  onClick={displayInfo} />
+            <img src={newTea.imgSrc} alt={newTea.imgSrc}  onClick={displayInfo} />
           </Link>
 
-            <Link to="/tea"><button >Acheter</button></Link>
-            <h2>{name}</h2>
-            <span>{price} €</span>
+            <button onClick={() => addCart(newTea)}>
+                Ajouter au panier
+            </button>
+            <h2>{newTea.name}</h2>
+            <span>{newTea.price} €</span>
 
         </div>   
 
         {
 
-          showInfo && <ToBuy img={img} name={name} price={price} poids={poids} showInfo={displayInfo} />
+          showInfo && <ToBuy img={newTea.img} name={newTea.name} price={newTea.price} poids={newTea.poids} showInfo={displayInfo} />
 
         }
 
@@ -50,4 +50,4 @@ const CardTea = ( {img, name, price, poids} ) => {
   );
 };
 
-export default CardTea;
+export default New;

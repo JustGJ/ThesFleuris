@@ -1,16 +1,14 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import imgBlog from '../assets/imgBlog.jpg';
+import blog from '../assets/header/blog.jpg';
 
-const blog = (props) => {
+const Blog = (props) => {
     return (
         <>
-            <Header img={imgBlog} title="Blog des Thés Fleuris"  />
+            <Header background={blog} title="Blog des Thés Fleuris"  />
             cards
-            <Footer />
         </>
     )
 }
 
-export default blog;
+export default Blog;

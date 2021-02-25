@@ -1,20 +1,21 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import Opinion from '../components/Opinion/Opinion';
-import imgIndex from '../assets/imgIndex.jpg';
-import CardsTeas from '../components/CardsTeas/CardsTeas';
 
-const index = () => {
+import Header from '../components/Header/Header';
+import News from '../components/News/News';
+import Opinion from '../components/Opinion/Opinion';
+
+import home from '../assets/header/home.jpg';
+
+
+const Home = ( { addCart }) => {
     return (
         <>
-            <Header img={imgIndex} title="C'est toujours l'heure du thé grâce aux tisanes fleuries" />
-            <CardsTeas />
+            <Header background={home} title="C'est toujours l'heure du thé grâce aux tisanes fleuries"  />
+            <News addCart={addCart} />
             blog
             <Opinion />
-            <Footer />
         </>
     )
 }
 
-export default index;
+export default Home;

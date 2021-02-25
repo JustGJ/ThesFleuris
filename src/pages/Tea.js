@@ -1,15 +1,14 @@
 import React from 'react';
+
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import imgTea from '../assets/imgTea.jpg';
-import CardsTeas from '../components/CardsTeas/CardsTeas';
+
+import tea from '../assets/header/Tea.jpg';
+
 
 const Tea = (props) => {
     return (
         <>
-            <Header img={imgTea} title="Achetez vos thés favoris" />   
-            <CardsTeas />
-            <Footer />
+            <Header background={tea} title="Achetez vos thés favoris" />   
         </>
     )
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Basket from '../Basket/Basket';
 import classes from './ToBuy.module.css';
 
 const ToBuy = ( { img, name, price, poids, showInfo }) => {
@@ -25,7 +24,6 @@ const ToBuy = ( { img, name, price, poids, showInfo }) => {
 
           <div className={classes.actions}>
             <button>Ajouter au panier</button>
-            <Basket value={value} />
             <button onClick={showInfo}>Retour à la boutique</button>
           </div>
         </div>
