@@ -1,9 +1,9 @@
-import React from 'react';
-// import { NavHashLink as Link } from 'react-router-hash-link';
+import React, { useState } from 'react';
 import classes from './ToBuy.module.css';
 
 const ToBuy = ( { img, name, price, poids, showInfo }) => {
 
+  const [value, setValue] = useState(1);
 
   return (
     <div className={classes.showInfos} id="ToBuy" >
@@ -19,7 +19,7 @@ const ToBuy = ( { img, name, price, poids, showInfo }) => {
 
           <div className={classes.quantite}>
             <label htmlFor="Quantité">Quantité :</label>
-            <input type="number" name="Quantité" id="Quantité" min="1" max="10"/>
+            <input type="number" name="Quantité" id="Quantité" min="1" max="10" value={value} onChange={(e) => setValue(e.target.value)}/>
           </div>
 
           <div className={classes.actions}>

@@ -1,0 +1,79 @@
+.card img {
+    width: 100%;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem 2rem;
+}
+
+.cardActions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .7rem;
+}
+
+.cardActions .buttons input {
+    width: 18%;
+    text-align: center;
+    padding: .067rem 0;
+ }
+
+.cardActions .buttons button {
+   margin: 0 .3rem;
+   padding: .09rem .4rem;
+   background-color: rgb(57, 185, 57);
+   color: #fff;
+   border-color: rgb(57, 185, 57);
+   cursor: pointer;
+   border: 1px solid #000;
+   outline: none;
+}
+
+.remove {
+    font-family: 'Roboto';
+    background-color: #F50057;
+    color: #fff;
+    padding: .3rem;   
+    margin-bottom: .1rem; 
+    border-radius: 30px;
+    cursor: pointer; 
+    border: none;
+    outline: none;
+}
+
+.remove:hover {
+    background-color: #C51162;
+}
+/* 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}  */
+
+
+@media screen and (max-width: 650px) {
+    .cart {
+      width: 40%;
+    }
+  }
+
+ 
+    @media screen and (max-width: 520px) { 
+    .remove {
+        padding: .2rem;
+        font-size: .7rem;
+    }
+    .cardActions .buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
