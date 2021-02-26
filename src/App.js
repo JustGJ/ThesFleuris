@@ -105,7 +105,7 @@ class App extends Component {
         <BrowserRouter>
             <Navbar total={this.state.total}/>
             <Switch>
-                <Route exact path="/">
+                <Route exact path="/ThesFleuris">
                     <Home addCart={this.handleAddToCart} />
                 </Route>  
                 <Route path="/tea" component={Tea} />
