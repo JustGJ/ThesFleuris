@@ -1,0 +1,94 @@
+ @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+
+.sideBar {
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 1.3rem;
+  border-bottom: 1px solid #fff;
+  z-index: 2;
+  color: #fff;
+}
+
+.sideBar a {
+  font-family: 'Darker Grotesque', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.sideBar svg, .menu svg {
+  font-size: 2.2rem;
+}
+
+.login svg {
+  margin-right: 1rem;
+}
+
+.toggleButton span {
+  width: 40px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  margin-top: 6px;
+  transition: .5s ease-out;
+}
+
+.toggleButton:active span {
+  transform: rotate(360deg);
+}
+.menu {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  left: 120%;
+  padding: 3.5rem 4rem;
+  background-color: rgb(36,42,53);
+  transition: .3s ease-out;  
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  opacity: 0;
+  color: #fff;
+}
+
+.menu .login {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+} 
+
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 27vh;
+  justify-content: space-between;
+}
+
+.navigation a, .login a {
+  color: #fff;
+}
+
+.active { 
+  left: 0%;
+  opacity: 1;
+  z-index: 1;
+} 
+
+
+
+
+
