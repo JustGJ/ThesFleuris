@@ -19,14 +19,14 @@ const New = ( { newTea, addCart } ) => {
         <div className={classes.informations}>
           <Link
             to="/#ToBuy"
-            spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             >
-            <img src={newTea.imgSrc} alt={newTea.imgSrc}  onClick={displayInfo} />
+            <img src={newTea.imgSrc} alt={newTea.imgSrc} onClick={displayInfo} />
           </Link>
 
+            {/* Au click sur "Ajout panier", on envoie l'item dans cart */}
             <button onClick={() => addCart(newTea)}>
                 Ajouter au panier
             </button>
@@ -37,15 +37,11 @@ const New = ( { newTea, addCart } ) => {
 
         {
 
-          showInfo && <ToBuy img={newTea.img} name={newTea.name} price={newTea.price} poids={newTea.poids} showInfo={displayInfo} />
+          showInfo && <ToBuy img={newTea.imgSrc} name={newTea.name} price={newTea.price} poids={newTea.poids} showInfo={displayInfo} />
 
         }
 
     </div>
-   
-
-     
- 
     </>
   );
 };

@@ -3,12 +3,11 @@
 .navbar {
   position: fixed;  
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: space-evenly; 
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid #fff;
   letter-spacing: .6px;
-  color: #fff;
   z-index: 1;
 }
 
@@ -25,12 +24,23 @@
   color: #fff;
 }
 
-.navigation a:hover {
-  color: #C89446;
+.navbar svg {
+  color: #fff;
   transition: .3s ease-out;
+  cursor: pointer;
+  margin-right: 1.2rem;
 }
 
-.index {
+.navbar svg:hover {
+  color: #C89446;
+  transform: translateX(3px);
+}
+
+.navbar .social .cart{
+  margin: 0;
+}
+
+.home {
   font-family: 'Darker Grotesque', sans-serif;
   text-transform: uppercase;
   border-left: 1px solid #fff;
@@ -39,72 +49,60 @@
   font-size: 1.4rem;
 }
 
-.index a, .login a {
+.home a, .login a {
   color: #fff;
-}
+} 
 
 .active {
-  border-bottom: .05rem solid #C89446;
+  padding: .3rem;
+  border: .1rem solid #C89446;
 }
- 
+
 .login, .social {
   display: flex;
   align-items: center;
 }
 
 .login {
-  margin: 0 1.1rem;
+  margin: 0 1.2rem;
 }
 
-i {
-  font-size: 1.2rem;
-  padding: 0 1rem;
-  cursor: pointer;
-}
-
-i:hover, .login a:hover, .index a:hover, .navigation a:hover {
+.home a:hover, .navigation a:hover, .login a:hover {
   color: #C89446;
   transition: .3s ease-out;
 }
 
-i:hover {
-  transform: translateX(.2rem);
-}
 
-i:nth-child(2){
-    margin-top: 0.1rem;
-}
 
-@media screen and (max-width: 1024px) {
-  .navigation  a {
-    font-size: 0.75rem;
-    letter-spacing: normal;
-  }
-  .index {
-    font-size: .9rem;
-    padding: 1.8rem  1.1rem;
-  }
-  .link {
-    font-size: 0.75rem;
-  }
-  i {
-    padding: 0rem 1rem 0 0;
-    font-size: 1rem;
-  }
+ @media screen and (max-width: 1020px) {
+    .navigation  a {
+      font-size: 0.8rem;
+      letter-spacing: normal;
+    }
+    .home {
+      font-size: 1.2rem;
+      padding: 1.8rem  1.1rem;
+    }
+    .link {
+      font-size: 0.8rem;     
+    }
+    .navbar svg {
+      font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 750px) {
-  .index {
-    font-size: .7rem;
+  .home {
+    font-size: .8rem;
     padding: 1.4rem 0;
-    width: 12%;
+    width: 14%;
     text-align: center;
   }
-  .link {
+  .link, .login {
     font-size: 0.7rem;
   }
-  i {
-    font-size: .9rem;
+  .navbar svg {
+    font-size: 1.1rem;
   }
 }
 
