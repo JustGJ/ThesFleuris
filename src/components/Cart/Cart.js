@@ -21,7 +21,7 @@ const Cart  = ({ cart, modifier , supprimer, reinitialiser, total }) => {
     const EmptyCart = () => (
         <div className={classes.emptyCart}>
             <p>Panier vide !</p>
-            <Link to="/">Ajouter des articles au panier</Link>
+            <Link to="/ThesFleuris">Ajouter des articles au panier</Link>
         </div>
     )
 
