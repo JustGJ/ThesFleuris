@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
-
-.navbar {
+.sideBar {
   position: absolute;
   display: flex;
   justify-content:space-between;
@@ -13,13 +12,34 @@
   color: #fff;
 }
 
-.navbar a {
+.sideBar a {
   font-family: 'Darker Grotesque', sans-serif;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
+.sideBar svg, .menu svg {
+  font-size: 2.2rem;
+}
+
+.login svg {
+  margin-right: 1rem;
+}
+
+.toggleButton span {
+  width: 40px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  margin-top: 6px;
+  transition: .5s ease-out;
+}
+
+.toggleButton:active span {
+  transform: rotate(360deg);
+}
 .menu {
   font-family: 'Darker Grotesque', sans-serif;
   font-style: italic;
@@ -29,10 +49,10 @@
   position: absolute;
   width: 100vw;
   height: 80vh;
-  right: -120%;
+  left: 120%;
   padding: 3.5rem 4rem;
   background-color: rgb(36,42,53);
-  transition: .5s ease;
+  transition: .3s ease-out;  
   font-size: 1.4rem;
   letter-spacing: .2rem;
   opacity: 0;
@@ -43,6 +63,13 @@
   display: flex;
   align-items: center;
 }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+} 
+
 
 .navigation {
   display: flex;
@@ -55,10 +82,13 @@
   color: #fff;
 }
 
-.display { 
-  right: 0%;
+.active { 
+  left: 0%;
   opacity: 1;
   z-index: 1;
-}
+} 
+
+
+
 
 

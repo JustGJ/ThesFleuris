@@ -11,6 +11,8 @@ cursor: pointer;
 }
 
 .informations button {
+  width: 70%;
+  margin: .4rem auto;
   padding: .5rem;
   cursor: pointer;
   border-radius: 4px;

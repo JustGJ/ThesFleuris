@@ -7,6 +7,7 @@ import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
+
 import './App.css';
 class App extends Component {
 
@@ -102,7 +103,7 @@ class App extends Component {
     render() {
      return (
         <BrowserRouter>
-            <Navbar />
+            <Navbar total={this.state.total}/>
             <Switch>
                 <Route exact path="/">
                     <Home addCart={this.handleAddToCart} />
@@ -123,7 +124,7 @@ class App extends Component {
                     />  
                 </Route>
                 <Route path="/" component={Home} />
-            </Switch>
+            </Switch>   
             <Footer />
         </BrowserRouter>
         )
