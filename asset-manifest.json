@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ThesFleuris/static/css/main.797f132b.chunk.css",
-    "main.js": "/ThesFleuris/static/js/main.49100a99.chunk.js",
-    "main.js.map": "/ThesFleuris/static/js/main.49100a99.chunk.js.map",
+    "main.css": "/ThesFleuris/static/css/main.1ccda774.chunk.css",
+    "main.js": "/ThesFleuris/static/js/main.12def4d6.chunk.js",
+    "main.js.map": "/ThesFleuris/static/js/main.12def4d6.chunk.js.map",
     "runtime-main.js": "/ThesFleuris/static/js/runtime-main.af762313.js",
     "runtime-main.js.map": "/ThesFleuris/static/js/runtime-main.af762313.js.map",
     "static/js/2.a2a9dbc3.chunk.js": "/ThesFleuris/static/js/2.a2a9dbc3.chunk.js",
     "static/js/2.a2a9dbc3.chunk.js.map": "/ThesFleuris/static/js/2.a2a9dbc3.chunk.js.map",
     "index.html": "/ThesFleuris/index.html",
-    "precache-manifest.95ccf646802d0c7d051a0b4ea95f732e.js": "/ThesFleuris/precache-manifest.95ccf646802d0c7d051a0b4ea95f732e.js",
+    "precache-manifest.329ff6fe559abf221215ce606491a4a0.js": "/ThesFleuris/precache-manifest.329ff6fe559abf221215ce606491a4a0.js",
     "service-worker.js": "/ThesFleuris/service-worker.js",
-    "static/css/main.797f132b.chunk.css.map": "/ThesFleuris/static/css/main.797f132b.chunk.css.map",
+    "static/css/main.1ccda774.chunk.css.map": "/ThesFleuris/static/css/main.1ccda774.chunk.css.map",
     "static/js/2.a2a9dbc3.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.a2a9dbc3.chunk.js.LICENSE.txt",
     "static/media/Tea.jpg": "/ThesFleuris/static/media/Tea.249f92f8.jpg",
     "static/media/accessories.jpg": "/ThesFleuris/static/media/accessories.791ef8ea.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.af762313.js",
     "static/js/2.a2a9dbc3.chunk.js",
-    "static/css/main.797f132b.chunk.css",
-    "static/js/main.49100a99.chunk.js"
+    "static/css/main.1ccda774.chunk.css",
+    "static/js/main.12def4d6.chunk.js"
   ]
 }
