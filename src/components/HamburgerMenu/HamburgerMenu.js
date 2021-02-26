@@ -38,7 +38,7 @@ const HamburgerMenu = ({ total }) => {
 					)
 			}
   
-		  	<Link to="/">Thés Fleuries</Link>
+		  	<Link to="/ThesFleuris">Thés Fleuries</Link>
 			
 			<div className={classes.toggleButton} onClick={openMenu} >
 					<span></span>

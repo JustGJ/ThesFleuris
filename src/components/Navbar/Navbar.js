@@ -36,7 +36,7 @@ const Navbar = ({ total }) => {
                 </ul>
             
                 <div className={classes.home}> 
-                    <Link to="/">Thés Fleuries</Link>
+                    <Link to="/ThesFleuris">Thés Fleuries</Link>
                 </div>
             
                 <div className={classes.link}>
