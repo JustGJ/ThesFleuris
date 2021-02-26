@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93ab75f393239bde1b63a39f9cf2ff7e",
+    "revision": "63ecef472f7fde843de0b63ff0cd2dd6",
     "url": "/ThesFleuris/index.html"
   },
   {
-    "revision": "122780fa51e537c3db40",
+    "revision": "b98121d2e0443f35d8a5",
     "url": "/ThesFleuris/static/css/main.797f132b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThesFleuris/static/js/2.a2a9dbc3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "122780fa51e537c3db40",
-    "url": "/ThesFleuris/static/js/main.efff06b1.chunk.js"
+    "revision": "b98121d2e0443f35d8a5",
+    "url": "/ThesFleuris/static/js/main.a0e18cb9.chunk.js"
   },
   {
     "revision": "f5b4ffa1927fe97b84ba",
