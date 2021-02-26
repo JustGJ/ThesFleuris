@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "219fbb0e2469332849111a5fd901689b",
+    "revision": "93ab75f393239bde1b63a39f9cf2ff7e",
     "url": "/ThesFleuris/index.html"
   },
   {
-    "revision": "9166bedf517680ec1e7f",
-    "url": "/ThesFleuris/static/css/main.88370e72.chunk.css"
+    "revision": "122780fa51e537c3db40",
+    "url": "/ThesFleuris/static/css/main.797f132b.chunk.css"
   },
   {
-    "revision": "62ba6128bd698a3a76bb",
-    "url": "/ThesFleuris/static/js/2.ec49f7a8.chunk.js"
+    "revision": "5dead2646ec9b4718a4d",
+    "url": "/ThesFleuris/static/js/2.a2a9dbc3.chunk.js"
   },
   {
-    "revision": "ac27d415db6a8f4ccefe45d91d40e399",
-    "url": "/ThesFleuris/static/js/2.ec49f7a8.chunk.js.LICENSE.txt"
+    "revision": "098c472c2f048d48fb8c9d81c57136bd",
+    "url": "/ThesFleuris/static/js/2.a2a9dbc3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9166bedf517680ec1e7f",
-    "url": "/ThesFleuris/static/js/main.5d403175.chunk.js"
+    "revision": "122780fa51e537c3db40",
+    "url": "/ThesFleuris/static/js/main.efff06b1.chunk.js"
   },
   {
     "revision": "f5b4ffa1927fe97b84ba",
