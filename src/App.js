@@ -123,7 +123,7 @@ class App extends Component {
                         total={this.state.total}
                     />  
                 </Route>
-                <Route path="/" component={Home} />
+                <Route path="/ThesFleuris" component={Home} />
             </Switch>   
             <Footer />
         </BrowserRouter>
