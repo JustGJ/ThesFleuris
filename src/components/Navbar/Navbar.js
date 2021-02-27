@@ -69,7 +69,7 @@ const Navbar = ({ total }) => {
                     <div className={classes.sideBar}>
                         {
                             location.pathname !== '/cart' && (
-                                <Link to="/cart">
+                                <Link to="/cart" onClick={closeMenu}>
                                     <Badge badgeContent={total.length} color="secondary">
                                         <ShoppingCartIcon className={classes.cart}/>
                                     </Badge>
@@ -77,7 +77,7 @@ const Navbar = ({ total }) => {
                                 )
                         }
         
-                        <Link to="/ThesFleuris">Thés Fleuries</Link>
+                        <Link to="/ThesFleuris" onClick={closeMenu}>Thés Fleuries</Link>
                     
                         <div className={classes.toggleButton} onClick={openMenu} >
                             <span></span>
@@ -89,7 +89,7 @@ const Navbar = ({ total }) => {
                 <div ref={display} className={classes.menu}>
                     <div className={classes.login}>
                         <AccountCircleIcon />
-                        <Link to="/login">Connexion</Link>
+                        <Link to="/login" onClick={closeMenu}>Connexion</Link>
                     </div>
         
                     <ul className={classes.navigation}>

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 
-.hamburgerMenu {
-  display: none;
-}
 .navbar {
   position: fixed;  
   display: flex;
@@ -107,7 +104,7 @@
   .navbar svg {
     font-size: 1.1rem;
   }
-}
+} 
 
 
 /* Hamburger Menu */
@@ -160,7 +157,7 @@
 .menu {
   font-family: 'Darker Grotesque', sans-serif;
   font-style: italic;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
@@ -169,7 +166,7 @@
   left: 120%;
   padding: 3.5rem 4rem;
   background-color: rgb(36,42,53);
-  transition: .4s ease-out;  
+  transition: 1s ease-out;  
   font-size: 1.4rem;
   letter-spacing: .2rem;
   opacity: 0;
@@ -200,20 +197,19 @@
 }
 
 .active { 
+  display: flex;
   left: 0%;
   opacity: 1;
   z-index: 1;
-} 
-
+}  
 
 
  @media screen and (max-width: 600px) {
   .hamburgerMenu {
-    display: block;
+    display: block;  
   }
-
   .navbar {
     display: none;
   }
 } 
-
+ 
