@@ -1,8 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
-
-import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 
 import { Badge } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -17,15 +14,19 @@ import classes from './Navbar.module.css'
 const Navbar = ({ total }) => {
 
     const location = useLocation() 
-    const isMobile = useMediaQuery({query: '(max-width: 600px'});          
-   
+    const display = useRef(null);
+           
+    // == Toggle qui affiche/retire le menu au click
+	const openMenu = () => {
+		display.current.classList.toggle(classes.active) 	
+	}
 
-    return isMobile ? ( 
-        <>                                   
-            <HamburgerMenu total={total}/>
-        </>
-    ) : 
-   
+	// == Au clic d'un lien, on ferme le menu
+	const closeMenu = () => {
+		display.current.classList.remove(classes.active) 	
+	}
+
+    return ( 
         <>
             <div className={classes.navbar}>
                 <ul className={classes.navigation}>
@@ -62,8 +63,53 @@ const Navbar = ({ total }) => {
                     </div> 
                 </div>
             </div>
+
+            {/* Hamburger Menu */}
+            <div className={classes.hamburgerMenu}>
+                    <div className={classes.sideBar}>
+                        {
+                            location.pathname !== '/cart' && (
+                                <Link to="/cart">
+                                    <Badge badgeContent={total.length} color="secondary">
+                                        <ShoppingCartIcon className={classes.cart}/>
+                                    </Badge>
+                                </Link>
+                                )
+                        }
+        
+                        <Link to="/ThesFleuris">Thés Fleuries</Link>
+                    
+                        <div className={classes.toggleButton} onClick={openMenu} >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div> 
+                    </div>
+        
+                <div ref={display} className={classes.menu}>
+                    <div className={classes.login}>
+                        <AccountCircleIcon />
+                        <Link to="/login">Connexion</Link>
+                    </div>
+        
+                    <ul className={classes.navigation}>
+                        <li><Link to="/tea" onClick={closeMenu}>Thés</Link></li>
+                        <li><Link to="/accessories" onClick={closeMenu}>Accessoires</Link></li>
+                        <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
+                        <li><Link to="/about" onClick={closeMenu}>À propos</Link></li>
+                        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+                    </ul>
+        
+                    <div className={classes.social}>
+                        <FacebookIcon />
+                        <InstagramIcon />
+                        <PinterestIcon />
+                    </div>
+                </div>
+            </div>
+             
         </>
-      
+    )  
 }   
 
 export default Navbar;
