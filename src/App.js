@@ -7,8 +7,12 @@ import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
+
+
 class App extends Component {
 
     // == Panier, montant total du panier
@@ -16,7 +20,19 @@ class App extends Component {
         cart: [],
         total : []
     }
-    
+
+    // == Notification d'ajout dans le panier
+    notify = (name) => {
+        toast.success(`Vous avez ajouté ${name}`, {
+            position: "bottom-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            closeButton: false
+        })
+    }
     // == Ajout d'item dans panier : newItem en param = toutes les infos de l'item cliqué dans composant News.js
     handleAddToCart = (newItem) => {
         // == Nouvel item à ajouter au panier
@@ -47,6 +63,7 @@ class App extends Component {
             cart: newCart,
             total: newTotal
         })
+       this.notify(newItem.name);
     }
 
      // == Modification d'un article (A RETRAVAILLER)
@@ -108,7 +125,9 @@ class App extends Component {
                 <Route exact path="/ThesFleuris">
                     <Home addCart={this.handleAddToCart} />
                 </Route>  
-                <Route path="/tea" component={Tea} />
+                <Route path="/tea" >
+                    <Tea addCart={this.handleAddToCart} />
+                </Route>
                 <Route path="/accessories" component={Accessories} />
                 <Route path="/blog" component={Blog} />
                 <Route path="/contact" component={Contact} />

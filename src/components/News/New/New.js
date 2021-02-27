@@ -1,8 +1,12 @@
 
 import React, { useState } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
+
 import ToBuy from '../../ToBuy/ToBuy';
 import classes from './New.module.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const New = ( { newTea, addCart } ) => {
   // == Stock un booléen qui permet d'ouvrir/fermer la fenêtre d'information du thé cliqué.
@@ -28,6 +32,17 @@ const New = ( { newTea, addCart } ) => {
 
             {/* Au click sur "Ajout panier", on envoie l'item dans cart */}
             <button onClick={() => addCart(newTea)}>
+            <ToastContainer 
+              position="bottom-center"
+              autoClose={1000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover={false}
+            />
                 Ajouter au panier
             </button>
             <h2>{newTea.name}</h2>

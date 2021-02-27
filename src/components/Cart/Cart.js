@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Cart  = ({ cart, modifier , supprimer, reinitialiser, total }) => {
 
-
+console.log(cart);
     // Ajout du montant total dans le panier
     let subTotal = 0;
 

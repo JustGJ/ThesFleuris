@@ -7,7 +7,7 @@ import Opinion from '../components/Opinion/Opinion';
 import home from '../assets/header/home.jpg';
 
 
-const Home = ( { addCart }) => {
+const Home = ({ addCart }) => {
     return (
         <>
             <Header background={home} title="C'est toujours l'heure du thé grâce aux tisanes fleuries"  />
