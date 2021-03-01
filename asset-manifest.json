@@ -1,30 +1,39 @@
 {
   "files": {
-    "main.css": "/ThesFleuris/static/css/main.1cc27bce.chunk.css",
-    "main.js": "/ThesFleuris/static/js/main.3d53a293.chunk.js",
-    "main.js.map": "/ThesFleuris/static/js/main.3d53a293.chunk.js.map",
+    "main.css": "/ThesFleuris/static/css/main.95008e54.chunk.css",
+    "main.js": "/ThesFleuris/static/js/main.d4b3a63d.chunk.js",
+    "main.js.map": "/ThesFleuris/static/js/main.d4b3a63d.chunk.js.map",
     "runtime-main.js": "/ThesFleuris/static/js/runtime-main.af762313.js",
     "runtime-main.js.map": "/ThesFleuris/static/js/runtime-main.af762313.js.map",
-    "static/js/2.cc9a3cef.chunk.js": "/ThesFleuris/static/js/2.cc9a3cef.chunk.js",
-    "static/js/2.cc9a3cef.chunk.js.map": "/ThesFleuris/static/js/2.cc9a3cef.chunk.js.map",
+    "static/css/2.c1bd0bbb.chunk.css": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css",
+    "static/js/2.0799aa98.chunk.js": "/ThesFleuris/static/js/2.0799aa98.chunk.js",
+    "static/js/2.0799aa98.chunk.js.map": "/ThesFleuris/static/js/2.0799aa98.chunk.js.map",
     "index.html": "/ThesFleuris/index.html",
-    "precache-manifest.8593427272fe0a971f3dd12da130fa02.js": "/ThesFleuris/precache-manifest.8593427272fe0a971f3dd12da130fa02.js",
+    "precache-manifest.6fc1d3b1092a55d77937058f8d2f9558.js": "/ThesFleuris/precache-manifest.6fc1d3b1092a55d77937058f8d2f9558.js",
     "service-worker.js": "/ThesFleuris/service-worker.js",
-    "static/css/main.1cc27bce.chunk.css.map": "/ThesFleuris/static/css/main.1cc27bce.chunk.css.map",
-    "static/js/2.cc9a3cef.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.cc9a3cef.chunk.js.LICENSE.txt",
+    "static/css/2.c1bd0bbb.chunk.css.map": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css.map",
+    "static/css/main.95008e54.chunk.css.map": "/ThesFleuris/static/css/main.95008e54.chunk.css.map",
+    "static/js/2.0799aa98.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.0799aa98.chunk.js.LICENSE.txt",
     "static/media/Tea.jpg": "/ThesFleuris/static/media/Tea.249f92f8.jpg",
     "static/media/accessories.jpg": "/ThesFleuris/static/media/accessories.791ef8ea.jpg",
+    "static/media/amande.png": "/ThesFleuris/static/media/amande.adffe365.png",
     "static/media/blog.jpg": "/ThesFleuris/static/media/blog.3cda4c23.jpg",
     "static/media/camomille.png": "/ThesFleuris/static/media/camomille.84f78f81.png",
     "static/media/contact.jpg": "/ThesFleuris/static/media/contact.d7726ee3.jpg",
     "static/media/earlGrey.png": "/ThesFleuris/static/media/earlGrey.ffb42a96.png",
+    "static/media/framboise.png": "/ThesFleuris/static/media/framboise.5f99d1dd.png",
+    "static/media/hibiscus.png": "/ThesFleuris/static/media/hibiscus.44643eb9.png",
     "static/media/home.jpg": "/ThesFleuris/static/media/home.496253e3.jpg",
-    "static/media/romarin.png": "/ThesFleuris/static/media/romarin.9c8a4463.png"
+    "static/media/lavande.png": "/ThesFleuris/static/media/lavande.c05a23ea.png",
+    "static/media/mint.png": "/ThesFleuris/static/media/mint.1480e2d9.png",
+    "static/media/romarin.png": "/ThesFleuris/static/media/romarin.9c8a4463.png",
+    "static/media/rose.png": "/ThesFleuris/static/media/rose.144a28d8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.af762313.js",
-    "static/js/2.cc9a3cef.chunk.js",
-    "static/css/main.1cc27bce.chunk.css",
-    "static/js/main.3d53a293.chunk.js"
+    "static/css/2.c1bd0bbb.chunk.css",
+    "static/js/2.0799aa98.chunk.js",
+    "static/css/main.95008e54.chunk.css",
+    "static/js/main.d4b3a63d.chunk.js"
   ]
 }

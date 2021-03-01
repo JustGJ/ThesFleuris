@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3afcff75f7c9d0572166034e0352fd3c",
+    "revision": "e14da9163d7029c6ba03f501f028a7ce",
     "url": "/ThesFleuris/index.html"
   },
   {
-    "revision": "3a3a3978e333d1a895b2",
-    "url": "/ThesFleuris/static/css/main.1cc27bce.chunk.css"
+    "revision": "fcbd8edae2d6f16ca824",
+    "url": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css"
   },
   {
-    "revision": "4c0af46b56e69b541a51",
-    "url": "/ThesFleuris/static/js/2.cc9a3cef.chunk.js"
+    "revision": "c2b9397876929945f673",
+    "url": "/ThesFleuris/static/css/main.95008e54.chunk.css"
+  },
+  {
+    "revision": "fcbd8edae2d6f16ca824",
+    "url": "/ThesFleuris/static/js/2.0799aa98.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/ThesFleuris/static/js/2.cc9a3cef.chunk.js.LICENSE.txt"
+    "url": "/ThesFleuris/static/js/2.0799aa98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a3a3978e333d1a895b2",
-    "url": "/ThesFleuris/static/js/main.3d53a293.chunk.js"
+    "revision": "c2b9397876929945f673",
+    "url": "/ThesFleuris/static/js/main.d4b3a63d.chunk.js"
   },
   {
     "revision": "f5b4ffa1927fe97b84ba",
@@ -30,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "791ef8ea847066b8842d4903299dd803",
     "url": "/ThesFleuris/static/media/accessories.791ef8ea.jpg"
+  },
+  {
+    "revision": "adffe3659badb61ce12d02a24c768a34",
+    "url": "/ThesFleuris/static/media/amande.adffe365.png"
   },
   {
     "revision": "3cda4c23e893dc30be7db87f0b3abcac",
@@ -48,11 +56,31 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThesFleuris/static/media/earlGrey.ffb42a96.png"
   },
   {
+    "revision": "5f99d1ddbccd95c46851b31852bcfaf6",
+    "url": "/ThesFleuris/static/media/framboise.5f99d1dd.png"
+  },
+  {
+    "revision": "44643eb9d1487d91e78ef4aabc11fbcb",
+    "url": "/ThesFleuris/static/media/hibiscus.44643eb9.png"
+  },
+  {
     "revision": "496253e3db853ca675617b14da83a617",
     "url": "/ThesFleuris/static/media/home.496253e3.jpg"
   },
   {
+    "revision": "c05a23eaa48a185694653de70699a183",
+    "url": "/ThesFleuris/static/media/lavande.c05a23ea.png"
+  },
+  {
+    "revision": "1480e2d9b3cb6521bca9d0b138928419",
+    "url": "/ThesFleuris/static/media/mint.1480e2d9.png"
+  },
+  {
     "revision": "9c8a4463accaa5ce6959800a28436828",
     "url": "/ThesFleuris/static/media/romarin.9c8a4463.png"
+  },
+  {
+    "revision": "144a28d803c7f14afcf8729764b33e19",
+    "url": "/ThesFleuris/static/media/rose.144a28d8.png"
   }
 ]);
