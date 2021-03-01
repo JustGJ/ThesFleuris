@@ -5,7 +5,7 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 import ToBuy from '../../ToBuy/ToBuy';
 import classes from './New.module.css';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const New = ( { newTea, addCart } ) => {
@@ -46,7 +46,7 @@ const New = ( { newTea, addCart } ) => {
                 Ajouter au panier
             </button>
             <h2>{newTea.name}</h2>
-            <span>{newTea.price} €</span>
+            <span>{newTea.price},00 €</span>
 
         </div>   
 

@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React from 'react';
 import CartItem from './CartItem/CartItem';
 import classes from './Cart.module.css';
 
@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Cart  = ({ cart, modifier , supprimer, reinitialiser, total }) => {
 
-console.log(cart);
     // Ajout du montant total dans le panier
     let subTotal = 0;
 
@@ -42,7 +41,7 @@ console.log(cart);
             }
 
             <div className={classes.cardDetails}>
-                <div className={classes.total}>Total : {subTotal} €</div>
+                <div className={classes.total}>Total : {subTotal},00 €</div>
                 <div className={classes.buttons}>
                     <button className={classes.emptyButton} onClick={reinitialiser}>Réinitialiser</button>
                     <button className={classes.checkout}>Paiement</button>

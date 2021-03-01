@@ -30,7 +30,7 @@ const TeaCard = ({ addCart, tea }) => {
                 Ajouter au panier
             </button>
             <h2>{tea.name}</h2>
-            <span>{tea.price} €</span>
+            <span>{tea.price},00 €</span>
 
         </div>   
 

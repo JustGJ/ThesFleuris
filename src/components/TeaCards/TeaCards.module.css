@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
+
+.input-range {
+  padding: 10px;
+  width: 50%;
+  /* background-color: purple; */
+}
+
+.input-range__track  {
+  width: 150px !important;
+  height: .3rem;
+  background-color: red;
+}
+
 .news {
   font-family: 'Darker Grotesque', sans-serif;
   width: 30vw;

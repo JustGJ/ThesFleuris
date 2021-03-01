@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import classes from './CardItem.module.css';
 
 const CartItem = ( { item, modifier, supprimer }) => {
@@ -9,7 +9,7 @@ const CartItem = ( { item, modifier, supprimer }) => {
 
             <div className={classes.cardContent}>
                 <h4>{item.name}</h4>
-                <span>{item.price} €</span>
+                <span>{item.price},00 €</span>
             </div>
            <div className={classes.cardActions}>
                 <div className={classes.buttons}>
