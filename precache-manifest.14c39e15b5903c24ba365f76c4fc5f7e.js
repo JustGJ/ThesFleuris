@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e14da9163d7029c6ba03f501f028a7ce",
+    "revision": "b0ece2c1e5c13a093c0e7664378648bf",
     "url": "/ThesFleuris/index.html"
   },
   {
-    "revision": "fcbd8edae2d6f16ca824",
+    "revision": "a2f25e3c4499f2976be7",
     "url": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css"
   },
   {
-    "revision": "c2b9397876929945f673",
-    "url": "/ThesFleuris/static/css/main.95008e54.chunk.css"
+    "revision": "6c4e1046dec005e636cb",
+    "url": "/ThesFleuris/static/css/main.6d9772cd.chunk.css"
   },
   {
-    "revision": "fcbd8edae2d6f16ca824",
-    "url": "/ThesFleuris/static/js/2.0799aa98.chunk.js"
+    "revision": "a2f25e3c4499f2976be7",
+    "url": "/ThesFleuris/static/js/2.863d25a1.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/ThesFleuris/static/js/2.0799aa98.chunk.js.LICENSE.txt"
+    "url": "/ThesFleuris/static/js/2.863d25a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2b9397876929945f673",
-    "url": "/ThesFleuris/static/js/main.d4b3a63d.chunk.js"
+    "revision": "6c4e1046dec005e636cb",
+    "url": "/ThesFleuris/static/js/main.5e439989.chunk.js"
   },
   {
     "revision": "f5b4ffa1927fe97b84ba",
@@ -32,16 +32,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThesFleuris/static/media/Tea.249f92f8.jpg"
   },
   {
-    "revision": "791ef8ea847066b8842d4903299dd803",
-    "url": "/ThesFleuris/static/media/accessories.791ef8ea.jpg"
-  },
-  {
     "revision": "adffe3659badb61ce12d02a24c768a34",
     "url": "/ThesFleuris/static/media/amande.adffe365.png"
   },
   {
     "revision": "3cda4c23e893dc30be7db87f0b3abcac",
     "url": "/ThesFleuris/static/media/blog.3cda4c23.jpg"
+  },
+  {
+    "revision": "0e86b9f38c5153010580c2bce044bbcc",
+    "url": "/ThesFleuris/static/media/bols.0e86b9f3.png"
+  },
+  {
+    "revision": "9d9956ecd4672acf244ec39f9c732590",
+    "url": "/ThesFleuris/static/media/boule.9d9956ec.png"
   },
   {
     "revision": "84f78f810cf743082242c5b6cd0f3bf4",
@@ -82,5 +86,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "144a28d803c7f14afcf8729764b33e19",
     "url": "/ThesFleuris/static/media/rose.144a28d8.png"
+  },
+  {
+    "revision": "ce13430191c750a7a85d91fd39fc7418",
+    "url": "/ThesFleuris/static/media/theire1.ce134301.png"
+  },
+  {
+    "revision": "d017c7ddf3f262cc20ad8e619253669b",
+    "url": "/ThesFleuris/static/media/theire2.d017c7dd.png"
+  },
+  {
+    "revision": "9b199ed4a22365d70279b3622cd4120b",
+    "url": "/ThesFleuris/static/media/theire3.9b199ed4.png"
   }
 ]);
