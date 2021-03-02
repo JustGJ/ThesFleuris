@@ -30,8 +30,7 @@ const Navbar = ({ total }) => {
         <>
             <div className={classes.navbar}>
                 <ul className={classes.navigation}>
-                    <li><NavLink activeClassName={classes.active} to="/tea">Thés</NavLink></li>
-                    <li><NavLink activeClassName={classes.active} to="/accessories">Accessoires</NavLink></li>
+                    <li><NavLink activeClassName={classes.active} to="/tea">Thés et accessoires</NavLink></li>
                     <li><NavLink activeClassName={classes.active} to="/blog">Blog</NavLink></li>
                     <li><NavLink activeClassName={classes.active} to="/contact">Contact</NavLink></li>
                 </ul>
@@ -93,10 +92,8 @@ const Navbar = ({ total }) => {
                     </div>
         
                     <ul className={classes.navigation}>
-                        <li><Link to="/tea" onClick={closeMenu}>Thés</Link></li>
-                        <li><Link to="/accessories" onClick={closeMenu}>Accessoires</Link></li>
+                        <li><Link to="/tea" onClick={closeMenu}>Thés et accessoires</Link></li>
                         <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
-                        <li><Link to="/about" onClick={closeMenu}>À propos</Link></li>
                         <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
                     </ul>
         

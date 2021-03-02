@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
 
@@ -14,20 +13,23 @@ a {
   text-decoration: none;
 }
 
-.ma-classe-custom{
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  /* background-color: navy; */
-}
-
-
 .input-range {
   padding: 10px;
-  width: 50%;
-  margin-left: 5rem;
+  width: 100%;
+  margin: 1rem 0;
   font-size: 1.5rem;
   touch-action: none;
-
-  /* background-color: purple; */
 }
+
+.input-range__label-container:nth-child(2) {
+  display: none;
+}
+
+.input-range__track--active {
+  background: #242A35;
+}
+
+
+
+
+

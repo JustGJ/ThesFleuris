@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import { Home, Accessories, Contact, Blog, Tea, Login } from './pages/export';
-import Cart from './components/Cart/Cart';
+import { Home, Contact, Blog, Tea, Login } from './pages/export';
 
+import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
@@ -128,7 +128,6 @@ class App extends Component {
                 <Route path="/tea" >
                     <Tea addCart={this.handleAddToCart} />
                 </Route>
-                <Route path="/accessories" component={Accessories} />
                 <Route path="/blog" component={Blog} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/login" component={Login} />

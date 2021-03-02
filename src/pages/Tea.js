@@ -9,7 +9,7 @@ import tea from '../assets/header/Tea.jpg';
 const Tea = ({ addCart }) => {
     return (
         <>
-            <Header background={tea} title="Achetez vos thés favoris" />   
+            <Header background={tea} title="Thés et accessoires" />   
             <TeaCards addCart={addCart} />
         </>
     )

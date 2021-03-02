@@ -1,87 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+.containerShop {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 1rem;
 
-
-.input-range {
-  padding: 10px;
-  width: 50%;
-  /* background-color: purple; */
 }
 
-.input-range__track  {
-  width: 150px !important;
-  height: .3rem;
-  background-color: red;
+.shop {
+  display: flex;
+  margin-left: 2rem;
+  /* margin: 0 auto; */
 }
 
-.news {
+.filter {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
+}
+
+.filter h4 {
   font-family: 'Darker Grotesque', sans-serif;
-  width: 30vw;
-  margin: 4rem auto;
-  text-align: center;
-  letter-spacing: .07rem;
-}
-
-.news h2 {
+  font-size: 1.8rem;
   font-style: italic;
-  font-size: 2.3rem;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  font-weight: normal;
+  letter-spacing: .1rem;
+  margin-bottom: 1.1rem;
 }
 
-.news p {
-  padding: 2rem 0;
+.filter h5 {
+  font-family: 'Darker Grotesque', sans-serif;
+  margin: 1.1rem 0;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: .1rem;
   font-size: 1.1rem;
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.filter label {
+  cursor: pointer;
+  transition: .4s;
+}
+
+.filter label:hover {
+  font-weight: bold;
+}
+
+.filter label:active {
+  font-weight: bold;
+}
+
+.filter ul {
+  font-family: 'Darker Grotesque', sans-serif;
+  margin-bottom: 1.1rem;
+  font-style: italic;
+}
+
+.cancel h5{
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .cardTea {
-  display: inline-block;
+  display: flex;
   text-align: center;
-  margin: 1.5rem auto;
-  width: 33%;
-}
-
-@media screen and (max-width: 900px){
-  .news {
-    margin: 3rem auto;
-  }
-  .news h2 {
-    font-size: 1.9rem
-  }
-  .news p {
-    font-size: .8rem;
-    padding: 1.3rem 0;
-  }
+  margin: 1.4rem;
 }
 
 
 
-@media screen and (max-width: 680px){
-  .news {
-    margin: 2rem auto;
-  }
-  .news h2 {
-    font-size: 1.5rem
-  }
-  .news p {
-    font-size: .75rem;
-    padding: 1rem 0;
-  }
-}
 
 
 @media screen and (max-width: 650px) {
   .cardTea {
     width: 50%;
-  }
-}
-
-@media screen and (max-width: 415px){
-  .news h2 {
-    font-size: 1.1rem
-  }
-  .news p {
-    font-size: .7rem;
-    padding: .8rem 0;
   }
 }
 

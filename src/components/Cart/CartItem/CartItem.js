@@ -15,7 +15,7 @@ const CartItem = ( { item, modifier, supprimer }) => {
                 <div className={classes.buttons}>
                     <label>
                         Quantité
-                        <input type="number"  />
+                        <input type="number" />
                         <button type="submit" >Valider</button>
                     </label>
                 </div>
