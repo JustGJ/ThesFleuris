@@ -1,61 +1,56 @@
 import React from 'react';
 import CartItem from './CartItem/CartItem';
 import classes from './Cart.module.css';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
-import { Link } from 'react-router-dom';
+const Cart  = ({ cart, setCart, cartItem, setQuantity , removeItem, cartEmpty }) => {
 
-
-const Cart  = ({ cart, modifier , supprimer, reinitialiser, total }) => {
-
-    // Ajout du montant total dans le panier
+    // == Montant total du panier
     let subTotal = 0;
+    cartItem.map(i => {
+        return subTotal += i.price * i.quantity
+    })
 
-    if(total.length){
-        for(let i=0; i < total.length; i++){
-            subTotal += total[i].price;
-        }
-    }
+    return (
+        <>
+            <div className={[classes.cartContent, `${cart && classes.cartContentActive}`].join(' ')}  >
+                <div className={classes.cartClose} onClick={() => setCart(false)}>
+                    <ChevronRightIcon fontSize="large" style={{color: "#fff"}} />
+                    <h3>Panier</h3>
+                </div>
+               
+                {
+                    cartItem.map(item => 
+                        <div className={classes.cartItem} key={item.id}>
+                            <CartItem 
+                                item={item} 
+                                setQuantity={setQuantity}
+                                removeItem={removeItem}
+                            />
+                            <hr />
+                        </div>  
+                    )
+                }
 
-    // == Fonction qui se déclenche si panier vide
-    const EmptyCart = () => (
-        <div className={classes.emptyCart}>
-            <p>Panier vide !</p>
-            <Link to="/ThesFleuris">Ajouter des articles au panier</Link>
-        </div>
-    )
+                <div className={classes.cardDetails}>
+                    <div className={classes.total}>
+                       { 
+                            subTotal === 0 ? 
+                            
+                            (<p>Votre panier est vide !</p>) 
+                            
+                            : 
 
-    // == Fonction qui affiche les articles si panier !== 0
-    const FilledCart = () => (
-        <div className={classes.cartContent}>
-
-            {
-                cart.map(item => 
-                    <div className={classes.cart} key={item.id}>
-                        <CartItem 
-                            item={item} 
-                            modifier={modifier}
-                            supprimer={supprimer}
-                        />
-                    </div>  
-                )
-            }
-
-            <div className={classes.cardDetails}>
-                <div className={classes.total}>Total : {subTotal},00 €</div>
-                <div className={classes.buttons}>
-                    <button className={classes.emptyButton} onClick={reinitialiser}>Réinitialiser</button>
-                    <button className={classes.checkout}>Paiement</button>
+                            <>
+                                <p>Sous-total</p> 
+                                <span>{subTotal},00 €</span>
+                                <hr /> 
+                                <button className={classes.emptyButton} onClick={cartEmpty}>Réinitialiser</button>
+                            </>          
+                       }          
+                    </div>
                 </div>
             </div>
-        </div>
-    )
- 
-    return (
-
-        <>
-            {
-                cart.length ? <FilledCart /> : <EmptyCart />
-            }
         </>
     );
 };

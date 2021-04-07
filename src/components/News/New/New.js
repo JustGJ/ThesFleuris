@@ -1,14 +1,13 @@
 
 import React, { useState } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
-
 import ToBuy from '../../ToBuy/ToBuy';
 import classes from './New.module.css';
-
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const New = ( { newTea, addCart } ) => {
+
   // == Stock un booléen qui permet d'ouvrir/fermer la fenêtre d'information du thé cliqué.
   const [showInfo, setShowInfo] = useState(false); 
 
@@ -16,6 +15,7 @@ const New = ( { newTea, addCart } ) => {
   const displayInfo = () => {
     setShowInfo(!showInfo)
   }
+
 
   return (
     <>

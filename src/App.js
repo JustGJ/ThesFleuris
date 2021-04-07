@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import { Home, Contact, Blog, Tea, Login } from './pages/export';
-
+import { Home, Tea } from './pages/export';
 import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
 
-
-class App extends Component {
+const App = () => {
 
     // == Panier, montant total du panier
-    state = {
-        cart: [],
-        total : []
-    }
+    
+    const [cart, setCart] = useState(false)
+    const [cartItem, setCartItem] = useState([])
+
 
     // == Notification d'ajout dans le panier
-    notify = (name) => {
+    const notify = (name) => {
         toast.success(`Vous avez ajouté ${name}`, {
             position: "bottom-center",
             autoClose: 2000,
@@ -34,118 +30,68 @@ class App extends Component {
         })
     }
     // == Ajout d'item dans panier : newItem en param = toutes les infos de l'item cliqué dans composant News.js
-    handleAddToCart = (newItem) => {
-        // == Nouvel item à ajouter au panier
-        const item = {
-            id: newItem.id,
-            imgSrc: newItem.imgSrc,
-            name: newItem.name,
-            price: newItem.price,
-            quantity: newItem.quantity
-        }
-
-        // == Copie de l'ancien pannier auquel on ajoute notre nouvel item avec push
-        const newCart = [...this.state.cart];
-        newCart.push(item);
-
-        // = Ajout du montant total
-        const total = {
-            id: newItem.id,
-            price: newItem.price
-        }
-
-        // == Copie de l'ancien montant auquel on ajoute notre nouveau montant avec push
-        const newTotal = [...this.state.total];
-        newTotal.push(total)
-
-        // == MAJ du panier et du total
-        this.setState({
-            cart: newCart,
-            total: newTotal
-        })
-       this.notify(newItem.name);
+    const handleAddItemToCart = (item) => {
+       const itemIndex = cartItem.findIndex(i => i.id === item.id);
+       if(itemIndex === -1) {
+           setCartItem([...cartItem, item])
+       } else {
+           setCartItem([...cartItem], cartItem[itemIndex].quantity += item.quantity)
+       }
+    //    console.log(itemIndex);
     }
-
-     // == Modification d'un article (A RETRAVAILLER)
-     handleUpdateQuantity = (id, imgSrc, name, quantity, price) => {
-        // == On récupère l'index de l'item que l'on doit modifier
-        const itemIndex = this.state.cart.findIndex(l => {
-            return l.id === id;
-        })
-        // == Nouvel item 
-        const newItem = {id, imgSrc, name, quantity, price};
-
-        // == Copie de l'ancien item
-        const newCart= [...this.state.cart];
-        // == L'ancien item à l'indice[index] est remplacé pour le nouvel item
-        newCart[itemIndex]= newItem;
-
-        // == Mise à jour du state
-        this.setState({
-            cart: newCart
-        })
+ 
+     // == Modification quantité article
+    const handleSetQuantity = (item, quantity) => {
+        if(quantity >= 1) {
+            const itemIndex = cartItem.findIndex(i => i.id === item.id);
+            setCartItem([...cartItem], cartItem[itemIndex].quantity = quantity)
+        }
     }
 
     // == Suppression d'un article du panier et MAJ du total
-    handleDeleteCartItem = (id) => {
-        // == On récupère l'index en vérifiant si l'Id de l'item cliqué correspond à l'Id parcouru dans cart
-        const cartItemIndex = this.state.cart.findIndex(item => {
-            return item.id === id;
-        })
+    const handleRemoveItemToCart = (id) => {
+        const itemIndex = cartItem.findIndex(i => i.id ===  id)
+        let newCartList = [...cartItem];
 
-        // == Copie de l'ancien pannier auquel on retire l'item grâce à l'index récupéré précédemment, et avec splice
-        const newCart = [...this.state.cart];
-        newCart.splice(cartItemIndex, 1)
-
-        // == Copie de l'ancien total auquel on retire le montant de l'item grâce à l'index récupéré précédemment, et avec splice
-        const newTotal = [...this.state.cart];
-        newTotal.splice(cartItemIndex, 1);
-
-        // == Mise à jour du pannier et du montant total
-        this.setState({
-            cart: newCart,
-            total: newTotal
-        })
+        newCartList.splice(itemIndex, 1);       
+        setCartItem(newCartList);
     }
-
-    // == Remise à zéro du panier
-    handleEmptyCart = () => {
-        this.setState({
-            cart: '',
-            total: ''
-        })
+    
+    // == Réinitilalisation panier
+    const handleEmptyCart = () => {
+       setCartItem([]);
     }
 
 
-    render() {
-     return (
+    return (
         <BrowserRouter>
-            <Navbar total={this.state.total}/>
+            <Navbar cart={cart} setCart={setCart} cartItem={cartItem} />
+            <Cart 
+                cart={cart} 
+                cartItem={cartItem}
+                setCart={setCart}
+                setQuantity={handleSetQuantity}
+                removeItem={handleRemoveItemToCart}
+                cartEmpty={handleEmptyCart} 
+            />  
             <Switch>
                 <Route exact path="/ThesFleuris">
-                    <Home addCart={this.handleAddToCart} />
+                    <Home 
+                        addCart={handleAddItemToCart}
+                        isOpen={cart} 
+                        setCart={setCart}
+                        setQuantity={handleSetQuantity}
+                        cart={cart}
+                    />
                 </Route>  
                 <Route path="/tea" >
-                    <Tea addCart={this.handleAddToCart} />
-                </Route>
-                <Route path="/blog" component={Blog} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/login" component={Login} />
-                <Route path="/cart">
-
-                    <Cart 
-                        cart={this.state.cart} 
-                        modifier={this.handleUpdateQuantity}
-                        supprimer={this.handleDeleteCartItem}
-                        reinitialiser={this.handleEmptyCart} 
-                        total={this.state.total}
-                    />  
+                    <Tea addCart={handleAddItemToCart} />
                 </Route>
                 <Route path="/ThesFleuris" component={Home} />
             </Switch>   
             <Footer />
         </BrowserRouter>
         )
-    }
+    
 }
 export default App;

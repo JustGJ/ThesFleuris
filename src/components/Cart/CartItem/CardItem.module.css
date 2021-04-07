@@ -1,11 +1,32 @@
+.card {
+    display: flex;
+}
+
 .card img {
-    width: 100%;
+    width: 35%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
 }
 
 .cardContent {
     display: flex;
-    justify-content: space-between;
-    padding: .4rem 2rem;
+    flex-direction: column;
+    margin-left: 1.2rem;
+}
+
+.cardContent p {
+    padding-bottom: .4rem;
+    font-size: 1.1rem;
+}
+
+.cardContent span {
+   font-weight: bold; 
+   font-size: 1.1rem;
 }
 
 .cardActions {
@@ -16,49 +37,42 @@
     padding: .7rem;
 }
 
+svg {
+    cursor: pointer;
+}
 .cardActions .buttons input {
-    width: 18%;
+    width: 32%;
     text-align: center;
     padding: .067rem 0;
  }
+ .cardActions .buttons :focus {
+    outline: 0;
+  }
+
+ input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+ input[type=number]
+{
+  -moz-appearance: textfield;
+}
 
 .cardActions .buttons button {
    margin: 0 .3rem;
-   padding: .09rem .4rem;
-   background-color: rgb(57, 185, 57);
-   color: #fff;
+   padding: .06rem .3rem;
+   color: #000;
    border-color: rgb(57, 185, 57);
    cursor: pointer;
    border: 1px solid #000;
    outline: none;
 }
 
-.remove {
-    font-family: 'Roboto';
-    background-color: #F50057;
-    color: #fff;
-    padding: .3rem;   
-    margin-bottom: .1rem; 
-    border-radius: 30px;
-    cursor: pointer; 
-    border: none;
-    outline: none;
+.cardActions .buttons span {
+    cursor: pointer;
 }
-
-.remove:hover {
-    background-color: #C51162;
-}
-/* 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance:textfield;
-}  */
-
 
 @media screen and (max-width: 650px) {
     .cart {

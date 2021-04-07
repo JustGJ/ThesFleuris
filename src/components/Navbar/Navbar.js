@@ -1,17 +1,16 @@
 import React, { useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-
 import { Badge } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram'
 import PinterestIcon from '@material-ui/icons/Pinterest';
-
-
 import classes from './Navbar.module.css'
 
-const Navbar = ({ total }) => {
+const Navbar = ( { cart, setCart, cartItem }) => {
+
+    console.log(cartItem)
 
     const location = useLocation() 
     const display = useRef(null);
@@ -31,8 +30,6 @@ const Navbar = ({ total }) => {
             <div className={classes.navbar}>
                 <ul className={classes.navigation}>
                     <li><NavLink activeClassName={classes.active} to="/tea">Thés et accessoires</NavLink></li>
-                    <li><NavLink activeClassName={classes.active} to="/blog">Blog</NavLink></li>
-                    <li><NavLink activeClassName={classes.active} to="/contact">Contact</NavLink></li>
                 </ul>
             
                 <div className={classes.home}> 
@@ -40,25 +37,14 @@ const Navbar = ({ total }) => {
                 </div>
             
                 <div className={classes.link}>
-                    <div className={classes.login}>
-                        <AccountCircleIcon />
-                        <Link to="/login">Connexion</Link>
-                    </div>
                     <div className={classes.social}>
                         <FacebookIcon />
                         <InstagramIcon />
                         <PinterestIcon />
-                        
-                        {
-                            location.pathname !== '/cart' && (
-                                <Link to="/cart">
-                                    <Badge badgeContent={total.length} color="secondary">
-                                        <ShoppingCartIcon className={classes.cart}/>
-                                    </Badge>
-                                </Link>
-                            )
-                        }
-
+                    
+                        <Badge badgeContent={cartItem.length} color="secondary">
+                            <ShoppingCartIcon className={classes.cart} onClick={() => setCart(!cart)}/>
+                        </Badge>
                     </div> 
                 </div>
             </div>
@@ -69,7 +55,7 @@ const Navbar = ({ total }) => {
                         {
                             location.pathname !== '/cart' && (
                                 <Link to="/cart" onClick={closeMenu}>
-                                    <Badge badgeContent={total.length} color="secondary">
+                                    <Badge badgeContent={5} color="secondary">
                                         <ShoppingCartIcon className={classes.cart}/>
                                     </Badge>
                                 </Link>

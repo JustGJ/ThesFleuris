@@ -1,13 +1,11 @@
 import React  from 'react';
-
 import camomille from '../../assets/teas/camomille.png';
 import romarin from '../../assets/teas/romarin.png';
 import earlGrey from '../../assets/teas/earlGrey.png';
-
 import New from './New/New';
 import classes from './News.module.css';
 
-const News = ( { addCart }) => {
+const News = ( { isOpen, addCart }) => {
 
     // == Tableau des nouveautés
     const newsTeas = [
@@ -18,15 +16,14 @@ const News = ( { addCart }) => {
 
     return (
         <>
-          <div className={classes.news}>
+          <div className={classes.news} >
             <h2>Nouveautés</h2>
             <p>Nos derniers produits selectionnés. <br/> Arrivage chaque semaine</p>
           </div>
           {
             newsTeas.map(newTea => 
-                    <div key={newTea.id} className={classes.cardTea} >
-                        <New newTea={newTea} addCart={addCart}      
-                        />
+                    <div key={newTea.id} className={classes.cardTea}>
+                        <New newTea={newTea} addCart={addCart} isOpen={isOpen} />
                     </div>    
                 ) 
             }    

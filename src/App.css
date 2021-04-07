@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 li {
   list-style-type: none;
 }
@@ -27,6 +26,12 @@ a {
 
 .input-range__track--active {
   background: #242A35;
+}
+
+
+.backgroundOpacity {
+  background-color: rgba(0, 0, 0 ,0.6);
+
 }
 
 

@@ -5,16 +5,18 @@ import News from '../components/News/News';
 import Opinion from '../components/Opinion/Opinion';
 
 import home from '../assets/header/home.jpg';
+import "../App.css";
+
+const Home = ({ isOpen, addCart, setCart, cart }) => {
 
 
-const Home = ({ addCart }) => {
     return (
-        <>
+        <div className={`${cart && "backgroundOpacity"}`} onClick={() => setCart(false)}>
             <Header background={home} title="C'est toujours l'heure du thé grâce aux tisanes fleuries"  />
-            <News addCart={addCart} />
+            <News addCart={addCart} isOpen={isOpen} cart={cart} setCart={setCart} />
             blog
             <Opinion />
-        </>
+        </div>
     )
 }
 

@@ -12,15 +12,16 @@ import classes from './TeaCards.module.css';
 
 const TeaCards = ({ addCart }) => {
 
+    console.log('render')
     const teas = [
-        {id: 1, imgSrc: Hibiscus, name: "Hibiscus", price: 7.00, quantity: 1, categorie: "Thés"},
+        {id: 4, imgSrc: Hibiscus, name: "Hibiscus", price: 7.00, quantity: 1, categorie: "Thés"},
         {id: 10, imgSrc: Bols, name: "Bols", price: 15.00, quantity: 1, categorie: "Accessoires"},  
-        {id: 2, imgSrc: Camomille, name: "Camomille", price: 8.00, quantity: 1, categorie: "Thés"},
-        {id: 3, imgSrc: Framboise, name: "Framboise", price: 8.00, quantity: 1, categorie: "Thés"},
+        {id: 3, imgSrc: Camomille, name: "Camomille", price: 8.00, quantity: 1, categorie: "Thés"},
+        {id: 5, imgSrc: Framboise, name: "Framboise", price: 8.00, quantity: 1, categorie: "Thés"},
         {id: 11, imgSrc: Tasse, name: "Tasse", price: 5.00, quantity: 1, categorie: "Accessoires"},    
         {id: 12, imgSrc: Boule, name: "Boule", price: 2.00, quantity: 1, categorie: "Accessoires"},   
-        {id: 4, imgSrc: Romarin, name: "Romarin", price: 5.00, quantity: 1, categorie: "Thés"},
-        {id: 5, imgSrc: EarlGrey, name: "Earl Grey", price: 6.00, quantity: 1, categorie: "Thés"},
+        {id: 1, imgSrc: Romarin, name: "Romarin", price: 5.00, quantity: 1, categorie: "Thés"},
+        {id: 2, imgSrc: EarlGrey, name: "Earl Grey", price: 6.00, quantity: 1, categorie: "Thés"},
         {id: 13, imgSrc: Theire1, name: "Théire rouge", price: 17.00, quantity: 1, categorie: "Accessoires"},        
         {id: 6, imgSrc: Lavande, name: "Lavande", price: 7.00, quantity: 1, categorie: "Thés"},
         {id: 7, imgSrc: Amande, name: "Amande", price: 15.00, quantity: 1, categorie: "Thés"},
@@ -90,9 +91,9 @@ const TeaCards = ({ addCart }) => {
             </div>
             <div className={classes.containerShop}>
             {
-            
+
             teas
-               .filter((tea) => {
+                .filter((tea) => {
                         return tea.price >= value.min && tea.price <= value.max;
                 })
                .filter((tea) => {
@@ -100,13 +101,11 @@ const TeaCards = ({ addCart }) => {
                })
                 .map(tea => 
                         <div key={tea.id} className={classes.cardTea} >
-                            <TeaCard tea={tea} addCart={addCart}      
-                            />
+                            <TeaCard tea={tea} addCart={addCart}/>
                         </div>    
-                    ) 
+                    )
             }          
             </div>
-            
         </div>
     );
 };
