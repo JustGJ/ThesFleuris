@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b0ece2c1e5c13a093c0e7664378648bf",
+    "revision": "d195e69796dfc9c094f192ff07959ea4",
     "url": "/ThesFleuris/index.html"
   },
   {
-    "revision": "a2f25e3c4499f2976be7",
+    "revision": "f24e1c339ef8a4caaab8",
     "url": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css"
   },
   {
-    "revision": "6c4e1046dec005e636cb",
-    "url": "/ThesFleuris/static/css/main.6d9772cd.chunk.css"
+    "revision": "2af192b5d72d185e967c",
+    "url": "/ThesFleuris/static/css/main.196d34d9.chunk.css"
   },
   {
-    "revision": "a2f25e3c4499f2976be7",
-    "url": "/ThesFleuris/static/js/2.863d25a1.chunk.js"
+    "revision": "f24e1c339ef8a4caaab8",
+    "url": "/ThesFleuris/static/js/2.d8d4c620.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/ThesFleuris/static/js/2.863d25a1.chunk.js.LICENSE.txt"
+    "url": "/ThesFleuris/static/js/2.d8d4c620.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c4e1046dec005e636cb",
-    "url": "/ThesFleuris/static/js/main.5e439989.chunk.js"
+    "revision": "2af192b5d72d185e967c",
+    "url": "/ThesFleuris/static/js/main.5064e053.chunk.js"
   },
   {
     "revision": "f5b4ffa1927fe97b84ba",
@@ -36,10 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThesFleuris/static/media/amande.adffe365.png"
   },
   {
-    "revision": "3cda4c23e893dc30be7db87f0b3abcac",
-    "url": "/ThesFleuris/static/media/blog.3cda4c23.jpg"
-  },
-  {
     "revision": "0e86b9f38c5153010580c2bce044bbcc",
     "url": "/ThesFleuris/static/media/bols.0e86b9f3.png"
   },
@@ -50,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "84f78f810cf743082242c5b6cd0f3bf4",
     "url": "/ThesFleuris/static/media/camomille.84f78f81.png"
-  },
-  {
-    "revision": "d7726ee3d41ceccfb46a344f9b81d5a0",
-    "url": "/ThesFleuris/static/media/contact.d7726ee3.jpg"
   },
   {
     "revision": "ffb42a96f270223e5f61e5e0de2750d2",
