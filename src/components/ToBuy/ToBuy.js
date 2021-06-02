@@ -4,7 +4,7 @@ import classes from './ToBuy.module.css';
 const ToBuy = ( { img, name, price, poids, showInfo }) => {
 
   const [value, setValue] = useState(1);
-
+  // 
   return (
     <div className={classes.showInfos} id="ToBuy" >
 

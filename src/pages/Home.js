@@ -14,7 +14,6 @@ const Home = ({ isOpen, addCart, setCart, cart }) => {
         <div className={`${cart && "backgroundOpacity"}`} onClick={() => setCart(false)}>
             <Header background={home} title="C'est toujours l'heure du thé grâce aux tisanes fleuries"  />
             <News addCart={addCart} isOpen={isOpen} cart={cart} setCart={setCart} />
-            blog
             <Opinion />
         </div>
     )

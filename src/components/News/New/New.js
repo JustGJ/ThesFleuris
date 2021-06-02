@@ -27,7 +27,11 @@ const New = ( { newTea, addCart } ) => {
             offset={-70}
             duration={500}
             >
-            <img src={newTea.imgSrc} alt={newTea.imgSrc} onClick={displayInfo} />
+            <div className={classes.test3}>
+              <img className={classes.test2} src={newTea.imgSrc} alt={newTea.imgSrc} onClick={displayInfo} />
+              <div className={classes.test}>Apercu</div>
+            </div>
+         
           </Link>
 
             {/* Au click sur "Ajout panier", on envoie l'item dans cart */}

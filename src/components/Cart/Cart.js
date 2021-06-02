@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect } from 'react';
 import CartItem from './CartItem/CartItem';
 import classes from './Cart.module.css';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -10,6 +10,15 @@ const Cart  = ({ cart, setCart, cartItem, setQuantity , removeItem, cartEmpty })
     cartItem.map(i => {
         return subTotal += i.price * i.quantity
     })
+
+    useEffect(() => {
+      
+        fetch(
+            'https://cors.bridged.cc/https://jobs.github.com/positions.json'
+          )
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+    }, [])
 
     return (
         <>
