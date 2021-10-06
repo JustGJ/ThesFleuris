@@ -14,7 +14,7 @@
 .cartContent {   
   position: fixed;
   background-color: #fff;
-  right: -400px;
+  right: -600px;
   width: 26vw;
   height: 100vh;
   /* z-index: 10000; */
