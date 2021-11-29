@@ -4,6 +4,7 @@ import { Home, Tea } from './pages/export';
 import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
@@ -11,6 +12,18 @@ import Fade from './components/Fade/Fade';
 
 const App = () => {
     // == Panier, montant total du panier
+
+    const notify = (name) => {
+        toast.success(`Vous avez ajouté ${name}`, {
+            position: 'bottom-center',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            closeButton: false,
+        });
+    };
 
     const [cart, setCart] = useState(false);
     const [cartItem, setCartItem] = useState([]);
@@ -20,6 +33,7 @@ const App = () => {
         const itemIndex = cartItem.findIndex((i) => i.id === item.id);
         if (itemIndex === -1) {
             setCartItem([...cartItem, item]);
+            notify(item.name);
         } else {
             setCartItem([...cartItem], (cartItem[itemIndex].quantity += item.quantity));
         }

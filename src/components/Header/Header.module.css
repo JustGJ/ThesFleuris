@@ -44,5 +44,8 @@
   .background {
     height: 30vh;
   }
+  .background h3 {
+    font-size: 1.2rem;
+  }
 }
 

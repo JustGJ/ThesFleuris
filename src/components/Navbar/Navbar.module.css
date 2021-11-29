@@ -18,6 +18,12 @@
     padding: 2rem 1.4rem;
     width: 40%;
 }
+@media screen and (max-width: 600px) {
+  .navbar .content {
+    padding: .8rem .6rem !important;
+
+  }
+}
 
 .navbar .content a {
     letter-spacing: 0.05rem;

@@ -1,5 +1,11 @@
 .card {
     display: flex;
+    opacity: 0;
+    animation: appear .7s forwards ease;
+}
+
+@keyframes appear {
+    to { opacity: 1;}
 }
 
 .card img {
@@ -39,6 +45,7 @@
 
 svg, i {
     cursor: pointer;
+transition: .7s ease;
 }
 .cardActions .buttons input {
     width: 32%;
