@@ -37,7 +37,7 @@
     padding: .7rem;
 }
 
-svg {
+svg, i {
     cursor: pointer;
 }
 .cardActions .buttons input {
@@ -63,7 +63,8 @@ input[type=number]::-webkit-outer-spin-button
 .cardActions .buttons button {
    margin: 0 .3rem;
    padding: .06rem .3rem;
-   color: #000;
+   color: #fff;
+   background-color: #242A35;
    border-color: rgb(57, 185, 57);
    cursor: pointer;
    border: 1px solid #000;
@@ -73,6 +74,7 @@ input[type=number]::-webkit-outer-spin-button
 .cardActions .buttons span {
     cursor: pointer;
 }
+
 
 @media screen and (max-width: 650px) {
     .cart {

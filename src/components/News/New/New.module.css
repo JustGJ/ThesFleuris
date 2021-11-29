@@ -1,94 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
-.card img {
-width: 30vw;
-cursor: pointer;
+.card {
+    margin: 0.4rem 1rem 0.4rem 0;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0px 6px rgb(51 51 51 / 15%);
+    transition: 0.2s ease;
+    width: 25%;
+    margin-bottom: 1rem;
+}
+.card:hover {
+    transform: scale(1.04);
+}
+.card:hover .cardText {
+    opacity: 1;
+    bottom: 2.3rem;
+}
+.card:hover img {
+    transform: scale(1.08);
 }
 
-.informations {
-  display: flex;
-  flex-direction: column;
-}
-
-.test3 {
-  position: relative
-}
-
-.test2 {
-  width: 100%;
-}
-
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100%; 
-  height: 7vh;
-  background-color: #fff;
-  bottom: 0;
-   z-index: 10;
-}
-
-.informations button {
-  width: 70%;
-  margin: .4rem auto;
-  padding: .5rem;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: .4s;
-  color: #fff;
-  background-color: #242A35;
-}
-
-.informations button:hover {
- background-color: #656971;
-}
-
-.informations h2 {
-  font-family: 'Darker Grotesque', sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  letter-spacing: .1rem;
-}
-
-.informations span {
-  font-weight: lighter;
-  font-size: 1.2rem;
-}
-
-@media screen and (max-width: 900px){
-  .card img {
-    width: 32vw;
-  }
-  .card h2 {
-    font-size: 1.1rem;
-  }
-  .informations span {
-    font-size: 1rem;
-  }
-}
-
-
-@media screen and (max-width: 800px){
-  .informations button {
-    font-size: .7rem;
-  }
-}
-
-
-@media screen and (max-width: 650px){
-  .card img {
-    width: 47vw;
+@media screen and (max-width: 900px) {
+    .card {
+        width: 30%;
     }
-  .informations button {
-    padding: .4rem;
+}
+@media screen and (max-width: 600px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+      width: 50%;
   }
 }
 
-@media screen and (max-width: 390px){
-  .informations button {
-    padding: .3rem;
+
+.imgContainer {
+    overflow: hidden;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease;
+}
+
+.cardText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.8rem;
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: 0.6s;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(0deg, white 40%, transparent 100%);
+}
+
+.cardText h3 {
+    font-size: 1.2rem;
+    padding-right: 4px;
+}
+@media screen and (max-width: 1100px) {
+  .cardText h3 {
+      font-size: .9rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cardText h3 {
+      font-size: .8rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cardText h3 {
+      font-size: .6rem ;
+  }
+}
+.cardText span {
+    background: #c89446;
+    font-weight: bold;
+    padding: 4px 6px;
+    color: white;
+    border-radius: 4px;
+}
+@media screen and (max-width: 1100px) {
+  .cardText span {
+      font-size: .8rem ;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cardText span {
+      font-size: .6rem ;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cardText span {
+      font-size: .5rem ;
   }
 }
 
+.cardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+}
+.cardIcon i {
+    font-size: 16px;
+    color: #c89446;
+    padding: 3px 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.cardIcon i:hover {
+    color: #c89446;
+    filter: brightness(125%);
+}

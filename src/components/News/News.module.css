@@ -25,13 +25,6 @@
   font-size: 1.1rem;
 }
 
-.cardTea {
-  display: inline-block;
-  text-align: center;
-  margin: 1.5rem auto;
-  width: 33%;
-}
-
 @media screen and (max-width: 900px){
   .news {
     margin: 3rem auto;
@@ -44,8 +37,6 @@
     padding: 1.3rem 0;
   }
 }
-
-
 
 @media screen and (max-width: 680px){
   .news {
@@ -77,3 +68,43 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+.containerShop {
+  margin: 0 auto;
+    display: flex !important;
+    grid-gap: 25px;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .containerShop {
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .containerShop {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.shop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.cardTea {
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    margin: 1.4rem;
+}
+
+@media screen and (max-width: 650px) {
+    .cardTea {
+        width: 50%;
+    }
+}

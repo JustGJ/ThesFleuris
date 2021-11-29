@@ -2,7 +2,7 @@
 
 .background {
   width: 100vw;
-  height: 100vh;
+  height: 62vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,19 +26,23 @@
 
 
 @media screen and (max-width: 1024px) {
+ 
   .background h3 {
     font-size: 2.3rem;
   }
 }
 
 @media screen and (max-width: 750px){
+  .background {
+    height: 40vh;
+  }
   .background h3 {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 520px) {
   .background {
-    height: 80vh;
+    height: 30vh;
   }
 }
 

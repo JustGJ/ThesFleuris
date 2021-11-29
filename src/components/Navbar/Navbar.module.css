@@ -1,216 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 
 .navbar {
-  position: fixed;  
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly; 
-  background-color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid #fff;
-  letter-spacing: .6px;
-  z-index: 1;
+    font-family: 'Darker Grotesque', sans-serif;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.6px;
+    z-index: 1;
 }
 
-.navbar .navigation, .link {
-  flex: 1;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 1.4rem;
+    width: 40%;
 }
 
-.navbar .navigation a { 
-  margin-left: 1rem;
-  letter-spacing: 0.05rem;
-  color: #fff;
+.navbar .content a {
+    letter-spacing: 0.05rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.navbar .content .active {
+    color: #c89446;
 }
 
 .navbar svg {
-  color: #fff;
-  transition: .3s ease-out;
-  cursor: pointer;
-  margin-right: 1.2rem;
+    color: #fff;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    margin-right: 1.2rem;
+    font-size: 1.7rem;
 }
 
 .navbar svg:hover {
-  color: #C89446;
-  transform: translateX(3px);
+    color: #c89446;
 }
 
-.navbar .social .cart{
-  margin: 0;
+.content a:hover,
+.content a:hover,
+.content a:hover {
+    color: #c89446;
+    transition: 0.3s ease-out;
 }
 
-.navbar .home {
-  font-family: 'Darker Grotesque', sans-serif;
-  text-transform: uppercase;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  padding: 2rem  1.4rem;
-  font-size: 1.4rem;
-}
-
-.home a, .login a {
-  color: #fff;
-} 
-
-.navbar .active {
-  padding: .3rem;
-  border: .1rem solid #C89446;
-}
-
-.navbar .login, .navbar .social {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .login {
-  margin: 0 1.2rem;
-}
-
-.home a:hover, .navigation a:hover, .login a:hover {
-  color: #C89446;
-  transition: .3s ease-out;
-}
-
-
-
- @media screen and (max-width: 1020px) {
-    .navbar .navigation  a {
-      font-size: 0.8rem;
-      letter-spacing: normal;
-    }
-    .navbar .home {
-      font-size: 1.2rem;
-      padding: 1.8rem  1.1rem;
-    }
-    .navbar .link {
-      font-size: 0.8rem;     
-    }
-    .navbar svg {
-      font-size: 1.3rem;
+@media screen and (max-width: 1020px) {
+    .navbar .content {
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 750px) {
-  .navbar .home {
-    font-size: .8rem;
-    padding: 1.4rem 0;
-    width: 14%;
-    text-align: center;
-  }
-  .navbar .link, .navbar .login {
-    font-size: 0.7rem;
-  }
-  .navbar svg {
+    .navbar .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+}
+.navbar .content a {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar .content a {
     font-size: 1.1rem;
   }
-} 
-
-
-/* Hamburger Menu */
-
-.hamburgerMenu {
-  display: none;
-  /* position: absolute; */
-}
-
-.sideBar {
-  position: absolute;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  width: 100vw;
-  padding: 1.3rem;
-  border-bottom: 1px solid #fff;
-  z-index: 2;
-  color: #fff;
-}
-
- .sideBar a {
-  font-family: 'Darker Grotesque', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.sideBar svg, .menu svg {
-  font-size: 2.2rem;
-}
-
-.login .menu svg {
-  margin-right: 1rem;
-}
-
-.toggleButton span {
-  width: 40px;
-  height: 6px;
-  border-radius: 5px;
-  background-color: #fff;
-  display: block;
-  margin-top: 6px;
-  transition: .2s ease-in;
-}
-
-.toggleButton:active span {
-  transform: translateX(-5px);
-}
-.menu {
-  font-family: 'Darker Grotesque', sans-serif;
-  font-style: italic;
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: absolute;
-  width: 100vw;
-  height: 40vh;
-  left: 120%;
-  padding: 3.5rem 4rem;
-  background-color: rgb(36,42,53);
-  transition: 1s ease-out;  
-  font-size: 1.4rem;
-  letter-spacing: .2rem;
-  opacity: 0;
-  color: #fff;
-}
-
-.menu .login {
-  display: flex;
-  align-items: center;
-}
-
-.hamburgerMenu .social {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-} 
-
-
-.hamburgerMenu .navigation {
-  display: flex;
-  flex-direction: column;
-  /* height: 27vh; */
-  justify-content: space-between;
-}
-
-.navigation a, .login a {
-  color: #fff;
-}
-
-.active { 
-  display: flex;
-  left: 0%;
-  opacity: 1;
-  z-index: 1;
-  transition: 1s ease;
-}  
-
-
- @media screen and (max-width: 600px) {
-  .hamburgerMenu {
-    display: block;  
+  .navbar svg {
+    font-size: 1.5rem;
+  
   }
-  .navbar {
-    display: none;
+}
+@media screen and (max-width: 340px) {
+  .navbar .content a {
+    font-size: 1.0rem;
   }
-} 
- 
+  .navbar svg {
+    font-size: 1.4rem;
+  
+  }
+}
+
