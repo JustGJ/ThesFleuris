@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ThesFleuris/static/css/main.7ce6979b.chunk.css",
-    "main.js": "/ThesFleuris/static/js/main.f5ffbc26.chunk.js",
-    "main.js.map": "/ThesFleuris/static/js/main.f5ffbc26.chunk.js.map",
+    "main.css": "/ThesFleuris/static/css/main.72c11e17.chunk.css",
+    "main.js": "/ThesFleuris/static/js/main.568b5443.chunk.js",
+    "main.js.map": "/ThesFleuris/static/js/main.568b5443.chunk.js.map",
     "runtime-main.js": "/ThesFleuris/static/js/runtime-main.af762313.js",
     "runtime-main.js.map": "/ThesFleuris/static/js/runtime-main.af762313.js.map",
     "static/css/2.c1bd0bbb.chunk.css": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css",
-    "static/js/2.d8d4c620.chunk.js": "/ThesFleuris/static/js/2.d8d4c620.chunk.js",
-    "static/js/2.d8d4c620.chunk.js.map": "/ThesFleuris/static/js/2.d8d4c620.chunk.js.map",
+    "static/js/2.1eba3968.chunk.js": "/ThesFleuris/static/js/2.1eba3968.chunk.js",
+    "static/js/2.1eba3968.chunk.js.map": "/ThesFleuris/static/js/2.1eba3968.chunk.js.map",
     "index.html": "/ThesFleuris/index.html",
-    "precache-manifest.0461289214ab08eaf31e0fd0d1300bb5.js": "/ThesFleuris/precache-manifest.0461289214ab08eaf31e0fd0d1300bb5.js",
+    "precache-manifest.1da9d1b61d5347aad11499c401464bea.js": "/ThesFleuris/precache-manifest.1da9d1b61d5347aad11499c401464bea.js",
     "service-worker.js": "/ThesFleuris/service-worker.js",
     "static/css/2.c1bd0bbb.chunk.css.map": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css.map",
-    "static/css/main.7ce6979b.chunk.css.map": "/ThesFleuris/static/css/main.7ce6979b.chunk.css.map",
-    "static/js/2.d8d4c620.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.d8d4c620.chunk.js.LICENSE.txt",
+    "static/css/main.72c11e17.chunk.css.map": "/ThesFleuris/static/css/main.72c11e17.chunk.css.map",
+    "static/js/2.1eba3968.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.1eba3968.chunk.js.LICENSE.txt",
     "static/media/Tea.jpg": "/ThesFleuris/static/media/Tea.249f92f8.jpg",
     "static/media/amande.png": "/ThesFleuris/static/media/amande.adffe365.png",
     "static/media/bols.png": "/ThesFleuris/static/media/bols.0e86b9f3.png",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.af762313.js",
     "static/css/2.c1bd0bbb.chunk.css",
-    "static/js/2.d8d4c620.chunk.js",
-    "static/css/main.7ce6979b.chunk.css",
-    "static/js/main.f5ffbc26.chunk.js"
+    "static/js/2.1eba3968.chunk.js",
+    "static/css/main.72c11e17.chunk.css",
+    "static/js/main.568b5443.chunk.js"
   ]
 }
