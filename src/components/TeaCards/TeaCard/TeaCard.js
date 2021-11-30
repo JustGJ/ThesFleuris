@@ -11,9 +11,9 @@ const TeaCard = ({ addCart, tea }) => {
     };
 
     return (
-        <div className={classes.card}>
+        <div className={classes.card} onClick={displayInfo}>
             <div className={classes.imgContainer}>
-                <img src={tea.imgSrc} alt={tea.imgSrc} onClick={displayInfo} />
+                <img src={tea.imgSrc} alt={tea.imgSrc} />
             </div>
             <div className={classes.cardText}>
                 <h3>{tea.name}</h3>

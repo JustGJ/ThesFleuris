@@ -6,17 +6,16 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
 @media screen and (max-width: 600px) {
-  .containerShop {
-    grid-gap: 10px;
-  }
+    .containerShop {
+        grid-gap: 10px;
+    }
 }
 @media screen and (max-width: 500px) {
-  .containerShop {
-    flex-direction: column;
-    align-items: center;
-  }
+    .containerShop {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .shop {
     display: flex;
@@ -92,7 +91,6 @@ input[type='radio'] {
 
 .input-range__track {
     background-color: red !important;
-
 }
 .input-range__track--active {
     background-color: red !important;
