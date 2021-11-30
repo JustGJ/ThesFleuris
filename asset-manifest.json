@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ThesFleuris/static/css/main.4bea53cc.chunk.css",
-    "main.js": "/ThesFleuris/static/js/main.51074104.chunk.js",
-    "main.js.map": "/ThesFleuris/static/js/main.51074104.chunk.js.map",
+    "main.css": "/ThesFleuris/static/css/main.73db4afe.chunk.css",
+    "main.js": "/ThesFleuris/static/js/main.7d444a2b.chunk.js",
+    "main.js.map": "/ThesFleuris/static/js/main.7d444a2b.chunk.js.map",
     "runtime-main.js": "/ThesFleuris/static/js/runtime-main.af762313.js",
     "runtime-main.js.map": "/ThesFleuris/static/js/runtime-main.af762313.js.map",
-    "static/css/2.c1bd0bbb.chunk.css": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css",
-    "static/js/2.132dc19d.chunk.js": "/ThesFleuris/static/js/2.132dc19d.chunk.js",
-    "static/js/2.132dc19d.chunk.js.map": "/ThesFleuris/static/js/2.132dc19d.chunk.js.map",
+    "static/css/2.5b767240.chunk.css": "/ThesFleuris/static/css/2.5b767240.chunk.css",
+    "static/js/2.c3344bec.chunk.js": "/ThesFleuris/static/js/2.c3344bec.chunk.js",
+    "static/js/2.c3344bec.chunk.js.map": "/ThesFleuris/static/js/2.c3344bec.chunk.js.map",
     "index.html": "/ThesFleuris/index.html",
-    "precache-manifest.338621f5b49945ad723db2afacd00e47.js": "/ThesFleuris/precache-manifest.338621f5b49945ad723db2afacd00e47.js",
+    "precache-manifest.ed6a25f30dd1b2768f61985619a5f1cf.js": "/ThesFleuris/precache-manifest.ed6a25f30dd1b2768f61985619a5f1cf.js",
     "service-worker.js": "/ThesFleuris/service-worker.js",
-    "static/css/2.c1bd0bbb.chunk.css.map": "/ThesFleuris/static/css/2.c1bd0bbb.chunk.css.map",
-    "static/css/main.4bea53cc.chunk.css.map": "/ThesFleuris/static/css/main.4bea53cc.chunk.css.map",
-    "static/js/2.132dc19d.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.132dc19d.chunk.js.LICENSE.txt",
+    "static/css/2.5b767240.chunk.css.map": "/ThesFleuris/static/css/2.5b767240.chunk.css.map",
+    "static/css/main.73db4afe.chunk.css.map": "/ThesFleuris/static/css/main.73db4afe.chunk.css.map",
+    "static/js/2.c3344bec.chunk.js.LICENSE.txt": "/ThesFleuris/static/js/2.c3344bec.chunk.js.LICENSE.txt",
     "static/media/Tea.jpg": "/ThesFleuris/static/media/Tea.249f92f8.jpg",
     "static/media/amande.png": "/ThesFleuris/static/media/amande.adffe365.png",
     "static/media/bols.png": "/ThesFleuris/static/media/bols.0e86b9f3.png",
@@ -33,9 +33,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.af762313.js",
-    "static/css/2.c1bd0bbb.chunk.css",
-    "static/js/2.132dc19d.chunk.js",
-    "static/css/main.4bea53cc.chunk.css",
-    "static/js/main.51074104.chunk.js"
+    "static/css/2.5b767240.chunk.css",
+    "static/js/2.c3344bec.chunk.js",
+    "static/css/main.73db4afe.chunk.css",
+    "static/js/main.7d444a2b.chunk.js"
   ]
 }
