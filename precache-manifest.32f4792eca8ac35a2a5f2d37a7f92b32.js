@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a65ab945954b89004bc3deb867142dad",
+    "revision": "731d3608e224c15f6d80bb2fc2c6c887",
     "url": "/ThesFleuris/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThesFleuris/static/css/2.5b767240.chunk.css"
   },
   {
-    "revision": "bc020a7b09a1a22a534e",
+    "revision": "0c090ec9e4ed50b6ec88",
     "url": "/ThesFleuris/static/css/main.73db4afe.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ThesFleuris/static/js/2.c3344bec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bc020a7b09a1a22a534e",
-    "url": "/ThesFleuris/static/js/main.7d444a2b.chunk.js"
+    "revision": "0c090ec9e4ed50b6ec88",
+    "url": "/ThesFleuris/static/js/main.56498ab1.chunk.js"
   },
   {
     "revision": "f5b4ffa1927fe97b84ba",
